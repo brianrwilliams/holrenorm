@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  30 JUL 2018 16:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  17 JUL 2018 15:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**holrenorm.tex
-(./holrenorm.tex
+**holrenorm_thesis_copy.tex
+(./holrenorm_thesis_copy.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
@@ -914,25 +914,24 @@ File: pppdftex.def 2017/01/14 v0.5h Pdfpages driver for pdfTeX (AM)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
-(./holrenorm.aux)
-\openout1 = `holrenorm.aux'.
+No file holrenorm_thesis_copy.aux.
+\openout1 = `holrenorm_thesis_copy.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 22.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 21.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
@@ -1001,7 +1000,7 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box67
-Package hyperref Info: Link coloring ON on input line 22.
+Package hyperref Info: Link coloring ON on input line 21.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1010,56 +1009,54 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count160
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
-
-(./holrenorm.out) (./holrenorm.out)
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
 \@outlinefile=\write5
-\openout5 = `holrenorm.out'.
+\openout5 = `holrenorm_thesis_copy.out'.
 
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 22.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 21.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 22.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 21.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 22.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 21.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 22.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 21.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 22.
+(Font)              scaled to size 10.42007pt on input line 21.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 22.
+(Font)              scaled to size 7.91925pt on input line 21.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 22.
+(Font)              scaled to size 6.25204pt on input line 21.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 22.
+(Font)              scaled to size 10.42007pt on input line 21.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 22.
+(Font)              scaled to size 7.91925pt on input line 21.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 22.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 22.
+(Font)              scaled to size 6.25204pt on input line 21.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 21.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-Package xypdf Info: Line width: 0.4pt on input line 22.
+Package xypdf Info: Line width: 0.4pt on input line 21.
 
 ABD: EveryShipout initializing macros
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/pdflscape.sty
@@ -1071,72 +1068,209 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 25.
+(Font)              scaled to size 12.50409pt on input line 23.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 25.
+(Font)              scaled to size 9.37807pt on input line 23.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 25.
+(Font)              scaled to size 7.29405pt on input line 23.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 25.
+(Font)              scaled to size 12.50409pt on input line 23.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 25.
+(Font)              scaled to size 9.37807pt on input line 23.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 25.
+(Font)              scaled to size 7.29405pt on input line 23.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 26.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 36.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 35.
+LaTeX Font Info:    Try loading font information for U+fplmbb on input line 35.
 
-
-LaTeX Warning: Citation `NekThesis' on page 1 undefined on input line 36.
-
-
-LaTeX Warning: Citation `NekChiral' on page 1 undefined on input line 36.
-
-
-LaTeX Warning: Citation `NekCFT' on page 1 undefined on input line 36.
-
-
-LaTeX Warning: Reference `chap: holsig' on page 1 undefined on input line 37.
-
-
-LaTeX Warning: Reference `chap: symmetries' on page 1 undefined on input line 3
-7.
-
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 39.
-
-LaTeX Warning: Citation `CosRenorm' on page 1 undefined on input line 52.
-
-
-LaTeX Warning: Citation `CG1' on page 1 undefined on input line 52.
-
-
-LaTeX Warning: Citation `CG2' on page 1 undefined on input line 52.
-
-LaTeX Font Info:    Try loading font information for U+fplmbb on input line 52.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
-)
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 53.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 53.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 53.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 53.
- [1
+) [1
 
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-LaTeX Font Info:    Try loading font information for U+eus on input line 106.
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
+LaTeX Warning: Citation `CostelloRenormalization' on page 2 undefined on input 
+line 46.
+
+LaTeX Font Info:    Try loading font information for U+eus on input line 82.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
-) <xymatrix 2x2
-150> [3]
-Overfull \hbox (12.96251pt too wide) in paragraph at lines 159--161
+) [2]
+
+LaTeX Warning: Citation `CostelloHolomorphic' on page 3 undefined on input line
+ 102.
+
+
+LaTeX Warning: Citation `LiVertex' on page 3 undefined on input line 109.
+
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 119.
+[3]
+
+LaTeX Warning: Citation `CG1' on page 4 undefined on input line 167.
+
+[4]
+
+LaTeX Warning: Citation `CG1' on page 5 undefined on input line 203.
+
+
+LaTeX Warning: Citation `KM97' on page 5 undefined on input line 207.
+
+
+LaTeX Warning: Citation `CG1' on page 5 undefined on input line 215.
+
+[5] [6]
+
+LaTeX Warning: Reference `tensor1' on page 7 undefined on input line 270.
+
+
+LaTeX Warning: Citation `CostelloRenormalization' on page 7 undefined on input 
+line 301.
+
+
+LaTeX Warning: Reference `lem: fnls' on page 7 undefined on input line 318.
+
+[7]
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 340.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 340.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 340.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 340.
+ [8]
+
+LaTeX Warning: Citation `StasheffDG' on page 9 undefined on input line 394.
+
+
+LaTeX Warning: Citation `GetzlerLie' on page 9 undefined on input line 394.
+
+
+LaTeX Warning: Citation `CG2' on page 9 undefined on input line 397.
+
+
+LaTeX Warning: Reference `chap: symmetries' on page 9 undefined on input line 4
+18.
+
+[9]
+
+LaTeX Warning: Citation `Fuks' on page 10 undefined on input line 439.
+
+
+LaTeX Warning: Citation `Guillemin' on page 10 undefined on input line 439.
+
+
+LaTeX Warning: Citation `LosikDiag' on page 10 undefined on input line 439.
+
+
+LaTeX Warning: Citation `Bernstein' on page 10 undefined on input line 439.
+
+
+LaTeX Warning: Reference `dfn: symplectic' on page 10 undefined on input line 4
+57.
+
+[10]
+
+LaTeX Warning: Citation `LurieDagX' on page 11 undefined on input line 505.
+
+[11]
+
+LaTeX Warning: Citation `GetzlerLie' on page 12 undefined on input line 527.
+
+
+LaTeX Warning: Citation `CostelloRenormalization' on page 12 undefined on input
+ line 551.
+
+[12]
+
+LaTeX Warning: Citation `CostelloRenormalization' on page 13 undefined on input
+ line 571.
+
+
+LaTeX Warning: Citation `CG2' on page 13 undefined on input line 571.
+
+
+LaTeX Warning: Citation `GetzlerDirac' on page 13 undefined on input line 578.
+
+
+LaTeX Warning: Citation `CG2' on page 13 undefined on input line 578.
+
+[13]
+Overfull \hbox (12.07072pt too wide) in paragraph at lines 624--627
+[]\OT1/ppl/m/n/10 We in-tro-duce the for-mal vari-able $[]$ and con-sider $[]$-
+dependent func-tion-als $\U/eus/m/n/10 O\OT1/zplm/m/n/10 (\U/eus/m/n/10 E\OT1/z
+plm/m/n/10 )[[[]]]$\OT1/ppl/m/n/10 . Let $\U/eus/m/n/10 O[]\OT1/zplm/m/n/10 (\U
+/eus/m/n/10 E\OT1/zplm/m/n/10 )[[[]]] \OMS/zplm/m/n/10 ^^Z
+ []
+
+
+LaTeX Warning: Citation `CostelloRenormalization' on page 14 undefined on input
+ line 640.
+
+
+LaTeX Warning: Citation `CostelloRenormalization' on page 14 undefined on input
+ line 642.
+
+
+LaTeX Warning: Citation `CG1' on page 14 undefined on input line 642.
+
+
+LaTeX Warning: Citation `CG2' on page 14 undefined on input line 642.
+
+[14]
+
+LaTeX Warning: Citation `CG2' on page 15 undefined on input line 675.
+
+
+LaTeX Warning: Citation `CostelloRenormalization' on page 15 undefined on input
+ line 679.
+
+
+LaTeX Warning: Citation `CostelloRenormalization' on page 15 undefined on input
+ line 682.
+
+
+LaTeX Warning: Citation `CG2' on page 15 undefined on input line 684.
+
+
+LaTeX Warning: Citation `CostelloRenormalization' on page 15 undefined on input
+ line 701.
+
+[15]
+Overfull \hbox (5.7792pt too wide) in paragraph at lines 723--726
+\OT1/ppl/m/n/10 The ob-struc-tion $\OT1/zplm/m/n/10 ^^B[\OML/zplm/m/it/10 L\OT1
+/zplm/m/n/10 ]$ \OT1/ppl/m/n/10 sat-is-fies the clas-si-cal mas-ter equa-tion a
+nd hence the limit $\OT1/zplm/m/n/10 ^^B[] = [][] ^^B[\OML/zplm/m/it/10 L\OT1/z
+plm/m/n/10 ]$
+ []
+
+
+LaTeX Warning: Reference `table: holtoBV' on page 16 undefined on input line 73
+8.
+
+
+LaTeX Warning: Citation `NekThesis' on page 16 undefined on input line 741.
+
+
+LaTeX Warning: Citation `NekChiral' on page 16 undefined on input line 741.
+
+
+LaTeX Warning: Citation `NekCFT' on page 16 undefined on input line 741.
+
+
+LaTeX Warning: Reference `chap: holsig' on page 16 undefined on input line 742.
+
+
+
+LaTeX Warning: Reference `chap: symmetries' on page 16 undefined on input line 
+742.
+
+[16] [17] <xymatrix 2x2 150>
+Overfull \hbox (12.96251pt too wide) in paragraph at lines 852--854
 [][]\OT1/ppl/b/n/10 Definition/Lemma 1. []\OT1/ppl/m/n/10 A \OT1/ppl/m/it/10 fr
 ee holo-mor-phic the-ory \OT1/ppl/m/n/10 on a com-plex man-i-fold $\OML/zplm/m/
 it/10 X$ \OT1/ppl/m/n/10 is the data $\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 V\OT1
@@ -1144,116 +1278,139 @@ it/10 X$ \OT1/ppl/m/n/10 is the data $\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 V\OT1
 m/m/n/10 ^^@\OT1/ppl/m/n/10 , \OMS/zplm/m/n/10 ^^@\OT1/zplm/m/n/10 )[])$
  []
 
+[18]
 
-LaTeX Warning: Reference `chap: holsig' on page 4 undefined on input line 169.
-
-
-LaTeX Warning: Citation `Polchinski1' on page 4 undefined on input line 193.
+LaTeX Warning: Reference `chap: holsig' on page 19 undefined on input line 862.
 
 
-LaTeX Warning: Reference `chap: holsig' on page 4 undefined on input line 194.
 
-[4]
-Overfull \hbox (3.97258pt too wide) in paragraph at lines 223--228
-[][]\OT1/ppl/m/it/10 Remark \OT1/ppl/m/n/10 2.4\OT1/ppl/m/it/10 . []\OT1/ppl/m/
+LaTeX Warning: Citation `Polchinski1' on page 19 undefined on input line 886.
+
+
+LaTeX Warning: Reference `chap: holsig' on page 19 undefined on input line 887.
+
+
+
+Overfull \hbox (3.97258pt too wide) in paragraph at lines 916--920
+[][]\OT1/ppl/m/it/10 Remark \OT1/ppl/m/n/10 7.3\OT1/ppl/m/it/10 . []\OT1/ppl/m/
 n/10 We will only work with a holo-mor-phic the-ory pre-scribed by the data $\O
 T1/zplm/m/n/10 (\OML/zplm/m/it/10 V\OT1/ppl/m/n/10 , \OT1/zplm/m/n/10 (\OMS/zpl
 m/m/n/10 ^^@\OT1/ppl/m/n/10 , \OMS/zplm/m/n/10 ^^@\OT1/zplm/m/n/10 )[]\OT1/ppl/
 m/n/10 , \OML/zplm/m/it/10 Q[]\OT1/zplm/m/n/10 )$
  []
 
+[19]
 
-LaTeX Warning: Citation `CostelloRenormalization' on page 5 undefined on input 
-line 264.
-
-[5]
-
-LaTeX Warning: Citation `GriffithsGreen' on page 6 undefined on input line 284.
+LaTeX Warning: Citation `GriffithsGreen' on page 20 undefined on input line 934
+.
 
 
+LaTeX Warning: Citation `WongChandler' on page 20 undefined on input line 934.
 
-LaTeX Warning: Citation `WongChandler' on page 6 undefined on input line 284.
-
-[6] <xymatrix 3x1 92>
-Overfull \hbox (88.42897pt too wide) detected at line 347
+[20] <xymatrix 3x1 92>
+Overfull \hbox (70.40111pt too wide) detected at line 994
 []
  []
 
 
-Overfull \hbox (79.5341pt too wide) in paragraph at lines 347--352
+Overfull \hbox (74.95895pt too wide) in paragraph at lines 994--998
 \OT1/ppl/m/n/10 ply the eval-u-a-tion pair-ing. We sym-metrize this to ob-tain 
 an el-e-ment $\OMS/zplm/m/n/10 f\OML/zplm/m/it/10 F\OT1/ppl/m/n/10 , \OML/zplm/
-m/it/10 F[]\OMS/zplm/m/n/10 g[] 2 []\OT1/zplm/m/n/10 ([][](\OML/zplm/m/it/10 V\
-OT1/zplm/m/n/10 )[]\OT1/ppl/m/n/10 , \OML/zplm/m/it/10 K[]\OT1/zplm/m/n/10 )[]$
-\OT1/ppl/m/n/10 .
+m/it/10 F[]\OMS/zplm/m/n/10 g[] 2 [][]\OT1/zplm/m/n/10 ([][](\OML/zplm/m/it/10 
+V\OT1/zplm/m/n/10 )[]\OT1/ppl/m/n/10 , \OML/zplm/m/it/10 K[]\OT1/zplm/m/n/10 )[
+]$\OT1/ppl/m/n/10 .
  []
 
+[21]
 
-LaTeX Warning: Citation `CosRenorm' on page 7 undefined on input line 388.
-
-
-LaTeX Warning: Citation `CG2' on page 7 undefined on input line 388.
-
-[7] [8]
-
-LaTeX Warning: Citation `johansen1' on page 9 undefined on input line 469.
+LaTeX Warning: Reference `dfn hol free theory' on page 22 undefined on input li
+ne 1044.
 
 
-LaTeX Warning: Citation `CostelloYangian' on page 9 undefined on input line 469
-.
+LaTeX Warning: Reference `table: holtoBV' on page 22 undefined on input line 10
+55.
+
+[22]
+
+LaTeX Warning: Citation `johansen1' on page 23 undefined on input line 1103.
 
 
-Overfull \hbox (3.6216pt too wide) in paragraph at lines 487--491
+LaTeX Warning: Citation `CostelloYangian' on page 23 undefined on input line 11
+03.
+
+
+Overfull \hbox (3.6216pt too wide) in paragraph at lines 1121--1125
 \OT1/ppl/m/n/10 bin-ing the Lie al-ge-bra struc-ture on $\U/euf/m/n/10 g$ \OT1/
 ppl/m/n/10 with the wedge prod-uct of the holo-mor-phic bun-dles $\OMS/zplm/m/n
 /10 ^[]\OML/zplm/m/it/10 T[]X$\OT1/ppl/m/n/10 .
  []
 
-[9]
+[23] [24]
 
-LaTeX Warning: Citation `CosRenorm' on page 10 undefined on input line 523.
-
-
-LaTeX Warning: Citation `CG2' on page 10 undefined on input line 544.
-
-[10]
-
-LaTeX Warning: Citation `CosRenorm' on page 11 undefined on input line 592.
-
-[11]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 624.
+LaTeX Warning: Reference `trans pairing' on page 25 undefined on input line 125
+8.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 624.
+LaTeX Warning: Reference `pairing 1' on page 25 undefined on input line 1277.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 624.
+LaTeX Warning: Reference `hol operator' on page 25 undefined on input line 1278
+.
+
+[25]
+
+LaTeX Warning: Reference `eg bg' on page 26 undefined on input line 1305.
+
+[26]
+
+LaTeX Warning: Reference `lem: hol trans local' on page 27 undefined on input l
+ine 1390.
+
+[27] [28] [29] [30]
+
+LaTeX Warning: Reference `lem: hol renorm' on page 31 undefined on input line 1
+775.
+
+[31]
+
+LaTeX Warning: Reference `weight1' on page 32 undefined on input line 1788.
 
 
-LaTeX Warning: Reference `CG2' on page 12 undefined on input line 634.
+LaTeX Warning: Reference `productprops2' on page 32 undefined on input line 180
+6.
 
-[12]
 
-LaTeX Warning: Citation `CosRenorm' on page 13 undefined on input line 674.
+LaTeX Warning: Reference `productprops2' on page 32 undefined on input line 181
+6.
 
-[13] [14] [15] [16]
-Overfull \hbox (80.20438pt too wide) detected at line 877
+
+LaTeX Warning: Reference `productprops1' on page 32 undefined on input line 182
+6.
+
+[32]
+
+LaTeX Warning: Reference `weight1' on page 33 undefined on input line 1849.
+
+
+LaTeX Warning: Reference `coords1' on page 33 undefined on input line 1850.
+
+
+LaTeX Warning: Reference `coords2' on page 33 undefined on input line 1850.
+
+
+Overfull \hbox (80.20438pt too wide) detected at line 1854
 [] [][] \OT1/ppl/m/n/10 d[]\OML/zplm/m/it/10 w[] [][] [] \OT1/zplm/m/n/10 ^^H(\
 OML/zplm/m/it/10 w[]\OT1/ppl/m/n/10 , [] , \OML/zplm/m/it/10 w[]\OT1/zplm/m/n/1
 0 ) [] [] [][] \OML/zplm/m/it/10 P[] [] \OT1/ppl/m/n/10 .
  []
 
-[17]
-Overfull \hbox (10.6809pt too wide) detected at line 935
+[33]
+Overfull \hbox (10.6809pt too wide) detected at line 1912
 []
  []
 
 
-Overfull \hbox (93.42703pt too wide) detected at line 941
+Overfull \hbox (93.42703pt too wide) detected at line 1918
 []\OMS/zplm/m/n/10 j\OML/zplm/m/it/10 W[]\OT1/zplm/m/n/10 (^^H)\OMS/zplm/m/n/10
  j ^^T \OML/zplm/m/it/10 C [][] \OT1/ppl/m/n/10 d[]\OML/zplm/m/it/10 w[] [][] [
 ] \OT1/ppl/m/n/10 d[]\OML/zplm/m/it/10 w[]\OT1/zplm/m/n/10 	(\OML/zplm/m/it/10 
@@ -1264,38 +1421,212 @@ T1/zplm/m/n/10 (\OML/zplm/m/it/10 w\OT1/ppl/m/n/10 , \OML/zplm/m/it/10 t\OT1/zp
 lm/m/n/10 )
  []
 
-[18]
+[34]
 
-LaTeX Warning: Citation `EWY' on page 19 undefined on input line 966.
+LaTeX Warning: Citation `EWY' on page 35 undefined on input line 1943.
 
 
-Overfull \hbox (62.73666pt too wide) in paragraph at lines 970--970
+LaTeX Warning: Reference `weight bound1' on page 35 undefined on input line 194
+4.
+
+
+Overfull \hbox (62.73666pt too wide) in paragraph at lines 1947--1947
 [] 
  []
 
-[19] [20]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1003.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1003.
- (./holrenorm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1003.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1003.
 
-Package rerunfilecheck Info: File `holrenorm.out' has not changed.
-(rerunfilecheck)             Checksum: C4FE478FD56859C776F4326BC8B6ECB0;710.
+LaTeX Warning: Reference `weight bound2' on page 35 undefined on input line 195
+4.
+
+[35]
+
+LaTeX Warning: Reference `sec: qme' on page 36 undefined on input line 1991.
+
+
+Overfull \hbox (0.37042pt too wide) in paragraph at lines 1999--2003
+\OT1/ppl/m/n/10 or, equiv-a-lently $\OT1/zplm/m/n/10 ^^B[\OML/zplm/m/it/10 L\OT
+1/zplm/m/n/10 ] = \OML/zplm/m/it/10 e[]\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 Q \O
+T1/zplm/m/n/10 + []^^A[])\OML/zplm/m/it/10 e[]$\OT1/ppl/m/n/10 . By def-i-ni-ti
+on, $\OML/zplm/m/it/10 I\OT1/zplm/m/n/10 [\OML/zplm/m/it/10 L\OT1/zplm/m/n/10 ]
+ = [][] \OML/zplm/m/it/10 W\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 P[]\OT1/ppl/m/n/
+10 , \OML/zplm/m/it/10 I\OT1/zplm/m/n/10 )[]  [][]$
+ []
+
+[36]
+
+LaTeX Warning: Reference `graph exp' on page 37 undefined on input line 2045.
+
+
+LaTeX Warning: Reference `graph exp' on page 37 undefined on input line 2046.
+
+
+LaTeX Warning: Reference `dfn: analytic weight' on page 37 undefined on input l
+ine 2065.
+
+
+LaTeX Warning: Reference `anomalyweight1' on page 37 undefined on input line 20
+85.
+
+[37]
+
+LaTeX Warning: Reference `lem: tech 1' on page 38 undefined on input line 2112.
+
+
+
+LaTeX Warning: Reference `coords1' on page 38 undefined on input line 2113.
+
+
+LaTeX Warning: Reference `coords2' on page 38 undefined on input line 2113.
+
+
+Overfull \hbox (68.17952pt too wide) detected at line 2121
+[]
+ []
+
+[38]
+Overfull \hbox (75.20071pt too wide) detected at line 2141
+[]
+ []
+
+
+LaTeX Warning: Reference `anomaly bound 1' on page 39 undefined on input line 2
+157.
+
+
+LaTeX Warning: Reference `lem: chiral anomaly' on page 39 undefined on input li
+ne 2165.
+
+
+LaTeX Warning: Citation `Adler' on page 39 undefined on input line 2178.
+
+
+LaTeX Warning: Citation `BJ' on page 39 undefined on input line 2178.
+
+[39]
+
+LaTeX Warning: Citation `FujikawaSuzuki' on page 40 undefined on input line 219
+4.
+
+
+LaTeX Warning: Reference `chap: symmetries' on page 40 undefined on input line 
+2217.
+
+
+LaTeX Warning: Reference `ABJ' on page 40 undefined on input line 2221.
+
+
+LaTeX Warning: Reference `lem: chiral anomaly' on page 40 undefined on input li
+ne 2227.
+
+
+LaTeX Warning: Reference `chap: symmetries' on page 40 undefined on input line 
+2228.
+
+[40]
+
+LaTeX Warning: Citation `THF1' on page 41 undefined on input line 2237.
+
+
+LaTeX Warning: Citation `THF2' on page 41 undefined on input line 2237.
+
+
+LaTeX Warning: Reference `chap: holsig' on page 41 undefined on input line 2245
+.
+
+
+LaTeX Warning: Reference `chap: symmetries' on page 41 undefined on input line 
+2245.
+
+
+LaTeX Warning: Citation `CG2' on page 41 undefined on input line 2250.
+
+
+LaTeX Warning: Reference `chap: symmetries' on page 41 undefined on input line 
+2250.
+
+[41] [42]
+
+LaTeX Warning: Reference `sec: qme' on page 43 undefined on input line 2341.
+
+
+Overfull \hbox (17.84227pt too wide) in paragraph at lines 2344--2346
+[][]\OT1/ppl/b/n/10 Definition 9.3. []\OT1/ppl/m/n/10 An $\U/euf/m/n/10 h$\OT1/
+ppl/m/it/10 -equivariant BV quan-ti-za-tion \OT1/ppl/m/n/10 is a col-lec-tion o
+f ef-fec-tive in-ter-ac-tions $\OMS/zplm/m/n/10 f\OML/zplm/m/it/10 I[]\OT1/zplm
+/m/n/10 [\OML/zplm/m/it/10 L\OT1/zplm/m/n/10 ]\OMS/zplm/m/n/10 g[] ^^Z
+ []
+
+
+LaTeX Warning: Citation `CostelloRenormalization' on page 43 undefined on input
+ line 2361.
+
+[43]
+
+LaTeX Warning: Citation `CG2' on page 44 undefined on input line 2370.
+
+
+LaTeX Warning: Reference `dgLie1' on page 44 undefined on input line 2378.
+
+
+LaTeX Warning: Reference `local inclusion' on page 44 undefined on input line 2
+379.
+
+
+LaTeX Warning: Citation `CG2' on page 44 undefined on input line 2389.
+
+
+LaTeX Warning: Reference `dgLie1' on page 44 undefined on input line 2390.
+
+
+LaTeX Warning: Reference `dfn: fh equiv' on page 44 undefined on input line 240
+9.
+
+
+LaTeX Warning: Reference `dfn: qft' on page 44 undefined on input line 2417.
+
+[44]
+
+LaTeX Warning: Reference `dfn: qft' on page 45 undefined on input line 2433.
+
+
+LaTeX Warning: Reference `sec: qme' on page 45 undefined on input line 2459.
+
+[45] [46]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2489.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2489.
+ (./holrenorm_thesis_copy.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2489.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2489.
+
+
+
+Package rerunfilecheck Warning: File `holrenorm_thesis_copy.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `holrenorm_thesis_copy.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  B8095AE753A1C39F4C0D3ED11717072A;1379.
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.43996pt have occurred.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1003.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2489.
  ) 
 Here is how much of TeX's memory you used:
- 24639 strings out of 492995
- 482293 string characters out of 6132704
- 619110 words of memory out of 5000000
- 27551 multiletter control sequences out of 15000+600000
- 51435 words of font info for 166 fonts, out of 8000000 for 9000
+ 24939 strings out of 492995
+ 487799 string characters out of 6132704
+ 616092 words of memory out of 5000000
+ 27738 multiletter control sequences out of 15000+600000
+ 52274 words of font info for 169 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,14n,86p,3246b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,15n,86p,3258b,920s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1314,10 +1645,10 @@ mf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist
 /fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2017/texmf-dist/fonts
 /type1/public/xypic/xycmat10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/public/xypic/xycmbt10.pfb>
-Output written on holrenorm.pdf (20 pages, 221453 bytes).
+Output written on holrenorm_thesis_copy.pdf (46 pages, 328035 bytes).
 PDF statistics:
- 284 PDF objects out of 1000 (max. 8388607)
- 242 compressed objects within 3 object streams
- 73 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 468 PDF objects out of 1000 (max. 8388607)
+ 399 compressed objects within 4 object streams
+ 196 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

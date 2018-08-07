@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  30 JUL 2018 16:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  6 AUG 2018 08:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**holrenorm.tex
-(./holrenorm.tex
+**holrenorm_v2.tex
+(./holrenorm_v2.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
@@ -914,8 +914,8 @@ File: pppdftex.def 2017/01/14 v0.5h Pdfpages driver for pdfTeX (AM)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
-(./holrenorm.aux)
-\openout1 = `holrenorm.aux'.
+(./holrenorm_v2.aux)
+\openout1 = `holrenorm_v2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
@@ -1014,9 +1014,9 @@ LaTeX Info: Redefining \ref on input line 22.
 LaTeX Info: Redefining \pageref on input line 22.
 LaTeX Info: Redefining \nameref on input line 22.
 
-(./holrenorm.out) (./holrenorm.out)
+(./holrenorm_v2.out) (./holrenorm_v2.out)
 \@outlinefile=\write5
-\openout5 = `holrenorm.out'.
+\openout5 = `holrenorm_v2.out'.
 
 LaTeX Font Info:    Try loading font information for OML+zplm on input line 22.
 
@@ -1194,16 +1194,25 @@ LaTeX Warning: Citation `CosRenorm' on page 7 undefined on input line 388.
 
 LaTeX Warning: Citation `CG2' on page 7 undefined on input line 388.
 
-[7] [8]
+[7]
+Overfull \hbox (9.28358pt too wide) in paragraph at lines 433--436
+\OT1/ppl/m/n/10 Since $\OML/zplm/m/it/10 I[]$ \OT1/ppl/m/n/10 is de-fined us-in
+g holo-mor-phic dif-fer-en-tial op-er-a-tors, we see that $\OT1/zplm/m/n/10 ([]
+\OML/zplm/m/it/10 I[]\OT1/zplm/m/n/10 )(\OML/zplm/m/it/10 \OT1/zplm/m/n/10 ) =
+ [](\OML/zplm/m/it/10 I[]\OT1/zplm/m/n/10 (\OML/zplm/m/it/10 \OT1/zplm/m/n/10 
+))$\OT1/ppl/m/n/10 .
+ []
 
-LaTeX Warning: Citation `johansen1' on page 9 undefined on input line 469.
+[8]
+
+LaTeX Warning: Citation `johansen1' on page 9 undefined on input line 491.
 
 
-LaTeX Warning: Citation `CostelloYangian' on page 9 undefined on input line 469
+LaTeX Warning: Citation `CostelloYangian' on page 9 undefined on input line 491
 .
 
 
-Overfull \hbox (3.6216pt too wide) in paragraph at lines 487--491
+Overfull \hbox (3.6216pt too wide) in paragraph at lines 509--513
 \OT1/ppl/m/n/10 bin-ing the Lie al-ge-bra struc-ture on $\U/euf/m/n/10 g$ \OT1/
 ppl/m/n/10 with the wedge prod-uct of the holo-mor-phic bun-dles $\OMS/zplm/m/n
 /10 ^[]\OML/zplm/m/it/10 T[]X$\OT1/ppl/m/n/10 .
@@ -1211,49 +1220,77 @@ ppl/m/n/10 with the wedge prod-uct of the holo-mor-phic bun-dles $\OMS/zplm/m/n
 
 [9]
 
-LaTeX Warning: Citation `CosRenorm' on page 10 undefined on input line 523.
-
-
-LaTeX Warning: Citation `CG2' on page 10 undefined on input line 544.
+LaTeX Warning: Citation `CosRenorm' on page 10 undefined on input line 545.
 
 [10]
 
-LaTeX Warning: Citation `CosRenorm' on page 11 undefined on input line 592.
+LaTeX Warning: Citation `CG2' on page 11 undefined on input line 566.
+
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 576.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 576.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 576.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 576.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 576.
 
 [11]
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 624.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 624.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 624.
-
-
-LaTeX Warning: Reference `CG2' on page 12 undefined on input line 634.
+LaTeX Warning: Citation `CosRenorm' on page 12 undefined on input line 624.
 
 [12]
 
-LaTeX Warning: Citation `CosRenorm' on page 13 undefined on input line 674.
+LaTeX Warning: Citation `CosRenorm' on page 13 undefined on input line 678.
 
-[13] [14] [15] [16]
-Overfull \hbox (80.20438pt too wide) detected at line 877
+
+LaTeX Warning: Citation `CG2' on page 13 undefined on input line 686.
+
+[13]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 725.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 725.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 725.
+
+
+LaTeX Warning: Reference `CG2' on page 14 undefined on input line 735.
+
+[14]
+Overfull \hbox (21.65553pt too wide) in paragraph at lines 762--764
+\OT1/ppl/m/n/10 Since the el-e-ment $\OT1/zplm/b/n/10 C[]$ \OT1/ppl/m/n/10 is i
+n-de-pen-dent of the co-or-di-nate on $\U/fplmbb/m/n/10 C[]$\OT1/ppl/m/n/10 , t
+he prop-a-ga-tor sim-pli-fies as $\OML/zplm/m/it/10 P[]\OT1/zplm/m/n/10 (\OML/z
+plm/m/it/10 z\OT1/ppl/m/n/10 , \OML/zplm/m/it/10 w\OT1/zplm/m/n/10 ) =
+ []
+
+[15] [16] [17]
+Overfull \hbox (85.8314pt too wide) detected at line 922
 [] [][] \OT1/ppl/m/n/10 d[]\OML/zplm/m/it/10 w[] [][] [] \OT1/zplm/m/n/10 ^^H(\
 OML/zplm/m/it/10 w[]\OT1/ppl/m/n/10 , [] , \OML/zplm/m/it/10 w[]\OT1/zplm/m/n/1
 0 ) [] [] [][] \OML/zplm/m/it/10 P[] [] \OT1/ppl/m/n/10 .
  []
 
-[17]
-Overfull \hbox (10.6809pt too wide) detected at line 935
+[18]
+Overfull \hbox (10.6809pt too wide) detected at line 980
 []
  []
 
 
-Overfull \hbox (93.42703pt too wide) detected at line 941
+Overfull \hbox (93.42703pt too wide) detected at line 986
 []\OMS/zplm/m/n/10 j\OML/zplm/m/it/10 W[]\OT1/zplm/m/n/10 (^^H)\OMS/zplm/m/n/10
  j ^^T \OML/zplm/m/it/10 C [][] \OT1/ppl/m/n/10 d[]\OML/zplm/m/it/10 w[] [][] [
 ] \OT1/ppl/m/n/10 d[]\OML/zplm/m/it/10 w[]\OT1/zplm/m/n/10 	(\OML/zplm/m/it/10 
@@ -1264,38 +1301,38 @@ T1/zplm/m/n/10 (\OML/zplm/m/it/10 w\OT1/ppl/m/n/10 , \OML/zplm/m/it/10 t\OT1/zp
 lm/m/n/10 )
  []
 
-[18]
+[19]
 
-LaTeX Warning: Citation `EWY' on page 19 undefined on input line 966.
+LaTeX Warning: Citation `EWY' on page 20 undefined on input line 1011.
 
 
-Overfull \hbox (62.73666pt too wide) in paragraph at lines 970--970
+Overfull \hbox (62.73666pt too wide) in paragraph at lines 1015--1015
 [] 
  []
 
-[19] [20]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1003.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1003.
- (./holrenorm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1003.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1003.
+[20] [21]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1050.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1050.
+ (./holrenorm_v2.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1050.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1050.
 
-Package rerunfilecheck Info: File `holrenorm.out' has not changed.
-(rerunfilecheck)             Checksum: C4FE478FD56859C776F4326BC8B6ECB0;710.
+Package rerunfilecheck Info: File `holrenorm_v2.out' has not changed.
+(rerunfilecheck)             Checksum: E3403FE00B767F724747EF53565CCD10;874.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1003.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1050.
  ) 
 Here is how much of TeX's memory you used:
- 24639 strings out of 492995
- 482293 string characters out of 6132704
- 619110 words of memory out of 5000000
- 27551 multiletter control sequences out of 15000+600000
- 51435 words of font info for 166 fonts, out of 8000000 for 9000
+ 24654 strings out of 492995
+ 482563 string characters out of 6132704
+ 617216 words of memory out of 5000000
+ 27562 multiletter control sequences out of 15000+600000
+ 53252 words of font info for 174 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,14n,86p,3246b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,14n,86p,3249b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1314,10 +1351,10 @@ mf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist
 /fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2017/texmf-dist/fonts
 /type1/public/xypic/xycmat10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/public/xypic/xycmbt10.pfb>
-Output written on holrenorm.pdf (20 pages, 221453 bytes).
+Output written on holrenorm_v2.pdf (21 pages, 226043 bytes).
 PDF statistics:
- 284 PDF objects out of 1000 (max. 8388607)
- 242 compressed objects within 3 object streams
- 73 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 298 PDF objects out of 1000 (max. 8388607)
+ 255 compressed objects within 3 object streams
+ 77 named destinations out of 1000 (max. 500000)
+ 109 words of extra memory for PDF output out of 10000 (max. 10000000)
 

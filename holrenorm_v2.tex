@@ -227,7 +227,7 @@ In particular, the sheaf of holomorphic sections of a holomorphic bundle is not 
 \brian{why is this bad?}
 \end{rmk}
 
-\subsubsection{Interacting holomorphic theories}
+\subsubsection{Interacting holomorphic theories} \label{sec: interacting}
 
 \def\olochol{\sO_{\rm loc}^{hol}}
 
@@ -365,11 +365,11 @@ A {\em classical holomorphic theory} on a complex manifold $X$ is the data of a 
 \ben
 I^{hol} \in \prod_{n \geq 3} {\rm Hom} ({\rm Jet}^{hol}(V)^{\tensor n} , K_X)_{S_n} \subset \sO_{red}^{hol}(V) 
 \een
-of cohomological degree $d$ such that the following equation
+of cohomological degree $d$ such that the following expression
 \ben
-Q^{hol} I^{hol} + \frac{1}{2} \{I^{hol}, I^{hol}\}^{hol} = 0
+Q^{hol} I^{hol} + \frac{1}{2} \{I^{hol}, I^{hol}\}^{hol} 
 \een 
-is satisfied.
+is $\partial$-exact.
 \end{dfn} 
 
 \begin{rmk}
@@ -393,27 +393,49 @@ Now, we know that $I^{hol}_k$ is a $\Omega^{d,hol}_X$-valued functional of the f
 \ben
 I_k^{hol} : (\varphi_1,\ldots,\varphi_k) \mapsto D_1(\varphi_1)\cdots D_k(\varphi_k) \in \Omega^{d,hol}_X
 \een
-where $\varphi_i\in \sV = \Gamma^{hol}(X, V)$ and $D_i$ is a holomorphic differential operator on $\sV$.
-Every holomorphic differential operator on the holomorphic vector bundle $V$ extends to a differential operator on its Dolbeault complex $\sE_V = \Omega^{0,*}(X, V)$. 
-Thus, we can define the functional
+where $\varphi_i\in \sV = \Gamma^{hol}(X, V)$ and $D_i$ is a holomorphic differential operator $\sV \to \Omega^{l, hol} \tensor \sV$ for some $l$.
+
+Every holomorphic differential operator $D$ of the above form extends to a differential operator on the associated Dolbeault complexes.
+Indeed, suppose $D : \sV \to \Omega^{l,hol} \tensor \sV$ is locally of the form $D = \omega \frac{\partial^{k_1}}{\partial z_1^{k_1}} \cdots \frac{\partial^{k_d}}{\partial z^{k_d}}$, where $\omega \in \Omega^{l,hol}$.
+Then, if $\alpha = s_I (z,\zbar) \d \zbar_I \in \Omega^{0,*}(X, V)$, where $s_I$ is a local section of $T^*X \tensor V$, we define
 \ben
-I_k^{\Omega^{0,*}} : (\varphi_1,\ldots, \varphi_k) \mapsto \int D_1 (\varphi_1)\cdots D_k(\varphi_k)
+D \alpha = \omega \wedge \left(\frac{\partial^{k_1}}{\partial z_1^{k_1}} \cdots \frac{\partial^{k_d}}{\partial z^{k_d}} s_I(z,\zbar)\right) \d \zbar_I \in \Omega^{l,*}(X , V) .
 \een
-where, now $\varphi_i$ is a section of the Dolbeault complex $\Omega^{0,*}(X , V)$. 
-The symbol $\int$ reminds us that we are working modulo total derivatives, so that the above expression defines an element of $\oloc(\sE_V)$. 
-This defines a linear map $\olochol(V) \to \oloc(\sE_V)$ that we denote $I^{hol} \mapsto I^{\Omega^{0,*}}$. 
-Note that since $I^{hol}$ is cohomological degree $d$, the local functional $I^{\Omega^{0,*}}$ is degree zero.
+In this way, $D$ extends to a differential operator 
+\ben
+D^{\Omega^{0,*}} : \Omega^{0,*}(X, V) \to \Omega^{l,*}(X,V) . 
+\een
+
+Via this construction, we can extend $I^{hol}$ to a $\Omega^{d,*}(X)$-valued functional on $\Omega^{0,*}(X, V)$ by the formula
+\ben
+I^{\Omega^{0,*}}_k : (\alpha_1,\ldots,\alpha_k) \mapsto D_1(\alpha_1) \cdots D_k(\alpha_k) \in  \Omega^{d,*}(X) .
+\een
+
+Furthermore, via integration we can define the $\CC$-valued functional on compactly supported sections
+\ben
+I_k = \int_X I^{0,*}_k : \Omega_c^{0,*}(X, V)^{\tensor k} \to \CC .
+\een
+Performing this for each homogenous piece, we obtain the functional $I = \sum_k \int I^{\Omega^{0,*}}_k$. 
+
+The symbol $\int_X$ reminds us that we are working modulo total derivatives.
+Moreover, since we began with a functional involving differential operators, we see that the above expression defines an element of $\oloc(\sE_V)$. 
+In conclusion, our construction thus outlined determines a linear map $\olochol(V) \to \oloc(\sE_V)$ obtained via the composition $I^{hol} \mapsto I^{\Omega^{0,*}} \mapsto I = \int I^{\Omega^{0,*}}$. 
+Note that since $I^{hol}$ is cohomological degree $d$, the local functional $I^{\Omega^{0,*}}$ is degree zero since integration is degree $-d$. 
 
 \begin{lem} Every classical holomorphic theory $(V, Q^{hol},(-,-)_V, I^{hol})$ determines the structure of a classical BV theory.
-The underlying free BV theory is given in Definition/Lemma \ref{dfn hol free theory} $(\sE_V, Q, \omega_V)$ and the interaction is $I^{\Omega^{0,*}}$. 
+The underlying free BV theory is given in Definition/Lemma \ref{dfn hol free theory} $(\sE_V, Q, \omega_V)$ and the interaction is $I = \int I^{\Omega^{0,*}}$. 
 \end{lem}
+
 \begin{proof}
-We must show that $Q^{hol}I^{hol} + \frac{1}{2} \{I^{hol},I^{hol}\}^{hol} = 0$ implies the ordinary classical master equation for $I^{\Omega^{0,*}}$:
+We must show that $Q^{hol}I^{hol} + \frac{1}{2} \{I^{hol},I^{hol}\}^{hol}$ exact implies the ordinary classical master equation for $I$:
 \ben
-\dbar I^{\Omega^{0,*}} + Q^{hol}I^{\Omega^{0,*}} + \frac{1}{2} \{I^{\Omega^{0,*}},I^{\Omega^{0,*}}\} = 0 .
+\dbar I + Q^{hol}I + \frac{1}{2} \{I,I\} = 0 .
 \een
-Since $I^{\Omega^{0,*}}$ is defined using holomorphic differential operators, the first term vanishes.
-The fact that $Q^{hol}I^{hol} + \frac{1}{2} \{I^{hol},I^{hol}\}^{hol} = 0$ implies $Q^{hol}I^{\Omega^{0,*}} + \frac{1}{2} \{I^{\Omega^{0,*}},I^{\Omega^{0,*}}\} = 0$ follows immediately from our definitions.
+Since $I^{\Omega^{0,*}}$ is defined using holomorphic differential operators, we see that $(\dbar I^{\Omega^{0,*}} ) (\alpha) = \dbar (I^{\Omega^{0,*}} (\alpha))$. 
+Thus, upon integration, we see that the first term is identically zero.
+
+Now, since $Q^{hol}I^{hol} + \frac{1}{2} \{I^{hol},I^{hol}\}^{hol}$ is $\partial$-exact, $Q^{hol}I^{\Omega^{0,*}} + \frac{1}{2} \{I^{\Omega^{0,*}},I^{\Omega^{0,*}}\}$ is also $\partial$-exact.
+By integration we obtain the result.
 \end{proof}
 
 Table \ref{table: holtoBV} is a useful summary showing how we are producing a BV theory from a holomorphic theory.
@@ -427,7 +449,7 @@ Table \ref{table: holtoBV} is a useful summary showing how we are producing a BV
 Holomorphic bundle $V$ & Space of fields $\sE_V = \Omega^{0,*}(X, V)$  \\ 
 Holomorphic differential operator $Q^{hol}$ & Linear BRST operator $\dbar + Q^{hol}$ \\ 
 Non-degenerate pairing $(-,-)_V$ & $(-1)$-symplectic structure $\omega_{V}$ \\ 
-Holomorphic Lagrangian $I^{hol}$ & Local functional $I^{\Omega^{0,*}} \in \oloc(\sE_V)$ \\ 
+Holomorphic Lagrangian $I^{hol}$ & Local functional $I = \int I^{\Omega^{0,*}} \in \oloc(\sE_V)$ \\ 
  \hline
 \end{tabular}
 \caption{From holomorphic to BV}
@@ -443,7 +465,7 @@ Consider the following holomorphic vector bundle on $X$:
 \ben
 V = \ul{\fg}_X [1] \oplus K_X \tensor \fg^\vee [d-2] .
 \een
-The notation $\ul{\fg}_X$ denotes the constant bundle with fiber $\fg$. 
+The notation $\ul{\fg}_X$ denotes the trivial bundle with fiber $\fg$. 
 The pairing $V \tensor V \to K_X[d-1]$ is similar to the pairing for the $\beta\gamma$ system, except we use the evaluation pairing $\<-.-\>_\fg$ between $\fg$ and its dual $\fg^\vee$. 
 In this example, $Q^{hol} = 0$.
 
@@ -551,110 +573,47 @@ We will not do that here, but hope the idea of how to do so is clear.
 \end{rmk}
 
 
-\section{One-loop regularization} \label{sec: hol renorm}
+\section{One-loop regularization for theories on $\CC^d$} \label{sec: hol renorm}
 
-In this section we study the renormalization of holomorphically translation invariant field theories on $\CC^d$ for any $d \geq 1$. 
-\brian{do we really assume translation invariant?}
+In this section we study the renormalization of holomorphically field theories on $\CC^d$ for general $d \geq 1$. 
 We start with a classical holomorphic theory on $\CC^d$ and consider its one-loop homotopy renormalization group flow from some finite scale $\epsilon$ to scale $L$.
-That is, we consider the sum over graphs of genus at most one where at each vertex we place the holomorphic interaction defining the classical theory.
+Explicitly, this flow manifests as a sum over weights of graphs; that is, {\em Feynman diagrams}.
+In terms of diagrams we consider the sum over graphs of genus at most one where at each vertex we place the holomorphic interaction defining the classical theory.
 To obtain a quantization of a classical theory one must make sense of the $\epsilon \to 0$ limit of this construction. 
 In general, this involves introducing a family of {\em counterterms}.
 The presence of counterterms can be a \brian{ref}. 
 For instance, some theories of gravity require the introduction of infinitely many such counterterms.
 Our main result is that for a holomorphic theory on $\CC^d$ no counterterms are required, and one obtains a well-defined $\epsilon \to 0$ limit. 
 
-The setup for holomorphic theories on $\CC^d$ follows our definitions in the previous section.
+The model for holomorphic theories on $\CC^d$ we use follows our setup in the previous section.
 Suppose $(V, Q^{hol}, (-,-)_V)$ prescribes the data of a free holomorphic theory on $\CC^d$.
-We can write the fields as the following deformed Dolbeault complex
+This means that $V$ is a holomorphic bundle on $\CC^d$, $Q^{hol} : \sV^{hol} \to \sV^{hol}$ is a holomorphic differential operator, and $(-,-)_V$ is a (shifted) $K_{\CC^d}$-valued pairing on $V$. 
+We assume, in addition, that $Q^{hol}$ is translation invariant.
+Concretely, this means that
+\ben
+Q^{hol} \in \CC \left[\frac{\partial}{\partial z_1} , \ldots, \frac{\partial}{\partial z_d}\right].
+\een
+
+We can write the fields, in the BV formalism, as the following deformed Dolbeault complex
 \ben
 \sE_V = \left(\Omega^{0,*}(\CC^d, V), \dbar + Q^{hol}\right) .
 \een
-
 We will fix a trivialization for the holomorphic vector bundle $V = \CC^d \times V_0$, where $V_0$ is the fiber over $0 \in \CC^d$.
 This leads to an identification $\Omega^{0,*}(\CC^d , V) = \Omega^{0,*}(\CC^d) \tensor_\CC V_0$.
-Further, we can write the $(-1)$-shifted symplectic structure defining the classical BV theory in the form
+Further, we write the $(-1)$-shifted symplectic structure defining the classical BV theory in the form
 \ben
 \omega_V(\alpha \tensor v, \beta \tensor w) = (v,w)_{V_0} \int \d^d z (\alpha \wedge \beta)
 \een
 where $(-,-)_{V_0}$ is a degree $(d-1)$-shifted pairing on the finite dimensional vector space $V_0$. 
 
-\brian{Not sure if the below is necessary. 
-Maybe $D_{k,j}$ can be arbitrary holomorphic operators, not just translation invariant.}
-
-We will assume that the holomorphic Lagrangian $I^{hol}$ is also translation invariant and so defines an interaction of the form $I = \sum_k I_k$ where $I_k$ is symmetric degree $k$ and
+A holomorphic interacting theory is prescribed by a holomorphic Lagrangian $I^{hol} \in \olochol(V)^+$. 
+As we have seen in Section \ref{sec: interacting} any holomorphic Lagrangian determines a local functional on its Dolbeualt complex via integration $I = \int_X I^{\Omega^{0,*}}$. 
+Here, as above, the notation $I^{\Omega^{0,*}}$ denotes the canonical extension of $I^{hol}$ to the Dolbeualt complex for $V$. 
+Using the trivialization $V = \CC^d \times V_0$ and $\Omega^{d,hol} = \CC \cdot \d^d z$, we can express the local functional as
 \ben
-I_k = \int I^{hol}_k(\varphi) = \int D_{k,1}(\varphi)\cdots D_{k,k} (\varphi) \d^d z 
+I_k (\alpha) = \int I^{hol}_k(\alpha) = \int D_{k,1}(\phi_{k,1} (\alpha))\cdots D_{k,k} ( \phi_{k,k}(\alpha)) \d^d z 
 \een
-where each $D_{i,j}$ is a translation invariant holomorphic differential operator $D_{i,j} \in \CC\left[\frac{\partial}{\partial z_i}\right]$. 
-
-\subsection{Holomorphic gauge fixing}
-
-We follow the mathematically precise approach to renormalization developed by Costello \cite{CosRenorm} which is largely motivated by the original length based regularization due to Wilson. \brian{Give citation}
- 
-In this formalism, to begin the process of renormalization we must first fix some auxiliary data, that of a {\em gauge fixing operator}.
-Agauge fixing operator is an operator on fields
-\ben
-Q^{GF} : \sE_V \to \sE_V[-1]
-\een
-of cohomological degree $-1$ such that $[Q, Q^{GF}]$ is a generalized Laplacian on $\sE$ where $Q$ is the linearized BRST operator. 
-
-For holomorphic theories there is a convenient choice for a gauge fixing operator. 
-To construct it we fix the standard flat metric on $\CC^d$. 
-Doing this, we let $\dbar^*$ be the adjoint of the operator $\dbar$.
-Using the coordinates on $(z_1,\ldots, z_d) \in \CC^d$ we can write this operator as
-\ben
-\dbar^* = \sum_{i=1}^d \frac{\partial}{\partial (\d \zbar_i)} \frac{\partial}{\partial z_i} .
-\een
-Equivalently $\frac{\partial}{\partial (\d \zbar_i)}$ is equal to contraction with the anti-holomorphic vector field $\frac{\partial}{\partial \zbar_i}$. 
-The operator $\dbar^*$ extends to the complex of fields via the formula
-\ben
-Q^{GF} = \dbar^* \tensor {\rm id}_V : \Omega^{0,*}(X , V) \to \Omega^{0,*-1}(X, V),
-\een
-
-
-\subsection{The propagator on $\CC^d$}
-
-We have just seen that the gauge fixing operator determines a generalized Laplaican, which for us is essentially the ordinary Hodge Laplacian on $\CC^d$. 
-Our regularization scheme utilizes the heat kernel associated to the Laplacian, for which we recall the explicit form below.
-
-By definition, the scale $L>0$ heat kernel is a symmetric element $K_L^V \in \sE_V(\CC^d) \tensor \sE_V(\CC^d)$ that satisfies
-\ben
-\omega_V(K_L, \varphi) = e^{-L[Q,Q^{GF}] } \varphi
-\een
-for any field $\varphi \in \sE_V$.
-For a more detailed definition see Definition \brian{ref??} in \ref{CG2}. 
-
-The tensor square of $\sE_V(\CC^d)$ decomposes as 
-\be\label{splitting}
-\sE_V(\CC^d) \tensor \sE_V(\CC^d) = \left(\Omega^{0,*}(\CC^d) \tensor \Omega^{0,*}(\CC^d)\right) \tensor (V_0 \tensor V_0) .
-\ee
-We will decompose the heat kernel accordingly. 
-
-Pick a basis $\{e_i\}$ of $V_0$ and let 
-\ben
-{\bf C}_{V_0} = \sum_{i,j} \omega_{ij} (e_i \tensor e_j) \in V_0 \tensor V_0
-\een
-be the quadratic Casimir.
-Here, $(\omega_{ij})$ is the inverse matrix to the pairing $(-,-)_{V_0}$. 
-
-The heat kernel splits with respect to the decomposition in Equation \ref{splitting} as
-\ben
-K_{L}^V (z,w) = K^{an}_L(z,w) \cdot {\bf C}_{V_0} 
-\een
-where the analytic part is independent of $V$ and equal to
-\ben
-K_L^{an} (z,w) = \frac{1}{(4 \pi L)^d} e^{-|z-w|^2/ 4L} \prod_{i=1}^d (\d \zbar_i - \d \zbar_j)  \in \Omega^{0,*} (\CC^d) \tensor \Omega^{0,*} (\CC^d) \cong \Omega^{0,*} (\CC^d \times \CC^d) .
-\een
-
-The propagator for the holomorphic theory $\sE_V$ is defined by
-\ben
-P_{\epsilon < L}^V(z,w) = \int_{t=\epsilon}^L \d t (Q^{GF} \tensor 1) K_{L}^V(z,w) .
-\een
-Since ${\bf C}_{V_0}$ is independent of the coordinate on $\CC$ this propagator is of the form $P_{\epsilon < L}^V(z,w) = P_{\epsilon < L}^{an}(z,w) \cdot {\bf C}_{V_0}$ where
-\begin{align*}
-P_{\epsilon < L}^{an}(z,w) & = \int_{t=\epsilon}^L \d t (\dbar^* \tensor 1) K_{L}^V(z,w) \\
-& = \int_{t=\epsilon}^L \d t \frac{1}{(4 \pi t)^d} \sum_{j=1}^d \left(\frac{z_j - w_j}{4 t} \right)  e^{-|z-w|^2 / 4t}  \prod_{i \ne j}^d (\d \zbar_i - \d \zbar_j) .
-\end{align*}
+where each $D_{i,j}$ is a holomorphic differential operator $D_{i,j} \in \CC\left[\frac{\partial}{\partial z_i}\right]$, and $\phi_{i,j} \in V_0^\vee$.
 
 \subsection{Homotopy RG flow}
 
@@ -684,9 +643,9 @@ for all $L < L'$.
 Given a classical interaction $I \in \oloc(\sE)$, there is a natural way to attempt construct an effective family of functionals satisfying the RG flow equations.
 Indeed, it follows from elementary properties of the homotopy RG flow operator $W(P_{L < L'}, -)$ that {\em if} the functional
 \ben
-I[L] ``=" W(P_{0<L}, I) \in \sO(\sE)[[\hbar]]
+I[L] \;\; ``=" \;\; W(P_{0<L}, I) 
 \een
-were to be well-defined for each $L >0$, then the RG flow equations would automatically be satisfied. 
+were to be well-defined for each $L >0$, then the RG flow equations would automatically be satisfied for the collection $\{I[L]\}$. 
 The problem is that this naive guess is ill-defined due to the distributional nature of the propagator $P_{0<L}$. 
 The approach of Costello is to introduce a small parameter $\epsilon > 0$ and to consider the limit of the functionals $W(P_{\epsilon < L}, I)$ as $\epsilon \to 0$. 
 For most theories, this $\epsilon \to 0$ limit is ill-defined, but there always exist $\epsilon$-dependent {\em counterterms} $I^{CT}(\epsilon)$ rendering the existence of the $\epsilon \to 0$ limit of $W(P_{\epsilon < L}, I - I^{CT}(\epsilon))$. 
@@ -714,6 +673,101 @@ exisits.
 Moreover, if $I$ is holomorphically translation invariant we can pick the family $\{I[L]\}$ to be holomorphically translation invariant as well.
 \end{prop}
 
+\subsection{Holomorphic gauge fixing}
+
+We follow the mathematically precise approach to renormalization developed by Costello \cite{CosRenorm} which is largely motivated by the original length based regularization due to Wilson. \brian{Give citation}
+ 
+In this formalism, to begin the process of renormalization we must first fix some auxiliary data, that of a {\em gauge fixing operator}.
+A gauge fixing operator is a square-zero operator on fields
+\ben
+Q^{GF} : \sE_V \to \sE_V[-1],
+\een
+of cohomological degree $-1$ such that $[Q, Q^{GF}]$ is a generalized Laplacian on $\sE$ where $Q$ is the linearized BRST operator. 
+For a complete definition see Section 8.2.1 of \cite{CG2}.
+
+For holomorphic theories there is a convenient choice for a gauge fixing operator. 
+To construct it we fix the standard flat metric on $\CC^d$. 
+Doing this, we let $\dbar^*$ be the adjoint of the operator $\dbar$.
+Using the coordinates on $(z_1,\ldots, z_d) \in \CC^d$ we can write this operator as
+\ben
+\dbar^* = \sum_{i=1}^d \frac{\partial}{\partial (\d \zbar_i)} \frac{\partial}{\partial z_i} .
+\een
+Equivalently $\frac{\partial}{\partial (\d \zbar_i)}$ is equal to contraction with the anti-holomorphic vector field $\frac{\partial}{\partial \zbar_i}$. 
+The operator $\dbar^*$ extends to the complex of fields via the formula
+\ben
+Q^{GF} = \dbar^* \tensor {\rm id}_V : \Omega^{0,*}(X , V) \to \Omega^{0,*-1}(X, V),
+\een
+
+\begin{lem}
+The operator $Q^{GF} = \dbar^* \tensor {\rm id}_V$ is a gauge fixing operator for the free theory $(\sE_V, \dbar + Q, \omega_V)$.
+\end{lem}
+\begin{proof}
+Clearly, $Q^{GF}$ is square zero since $(\dbar^*)^2 = 0$.
+Since $Q^{hol}$ is a translation invariant holomorphic differential operator we have
+\ben
+[\dbar + Q^{hol}, Q^{GF}] = [\dbar,\dbar^*] \tensor \id_{V} .
+\een
+The operator $[\dbar,\dbar^*]$ is simply the Dolbeault Laplacian on $\CC^d$, which 
+in coordinates is
+\ben
+[\dbar,\dbar^*] = -\sum_{i=1}^d \frac{\partial}{\partial \zbar_i}\frac{\partial}{\partial z_i} .
+\een
+In particular, the operator $[\dbar,\dbar^*] \tensor \id_{V}$ is a generalized Laplacian. 
+
+Finally, we must show that $Q^{GF}$ is (graded) self-adjoint for the shifted symplectic pairing $\omega_V$. 
+This follows from the fact about Dolbeualt forms on $\CC^d$.
+If $\alpha,\beta \in \Omega^{0,*}_c(\CC^d)$ then
+\ben 
+\int_{\CC^d} (\dbar^* \alpha) \wedge \beta \wedge \d^d z = \pm \int_{\CC^d} \alpha \wedge (\dbar^* \beta) \wedge \d^d z .
+\een
+\end{proof}
+
+\subsection{The propagator on $\CC^d$}
+
+The gauge fixing operator determines a generalized Laplaican, which for us is essentially the ordinary Hodge Laplacian on $\CC^d$. 
+Our regularization scheme utilizes the heat kernel associated to the Laplacian, for which we recall the explicit form below.
+
+By definition, the scale $L>0$ heat kernel is a symmetric element $K_L^V \in \sE_V(\CC^d) \tensor \sE_V(\CC^d)$ that satisfies
+\ben
+\omega_V(K_L, \varphi) = e^{-L[Q,Q^{GF}] } \varphi
+\een
+for any field $\varphi \in \sE_V$.
+For a more detailed definition see Section 8.2.3 in \ref{CG2}. 
+
+The tensor square of $\sE_V(\CC^d)$ decomposes as 
+\be\label{splitting}
+\sE_V(\CC^d) \tensor \sE_V(\CC^d) = \left(\Omega^{0,*}(\CC^d) \tensor \Omega^{0,*}(\CC^d)\right) \tensor (V_0 \tensor V_0) .
+\ee
+We will decompose the heat kernel accordingly. 
+
+Pick a basis $\{e_i\}$ of $V_0$ and let 
+\ben
+{\bf C}_{V_0} = \sum_{i,j} \omega_{ij} (e_i \tensor e_j) \in V_0 \tensor V_0
+\een
+be the quadratic Casimir.
+Here, $(\omega_{ij})$ is the inverse matrix to the pairing $(-,-)_{V_0}$. 
+
+The heat kernel splits with respect to the decomposition in Equation \ref{splitting} as
+\ben
+K_{L}^V (z,w) = K^{an}_L(z,w) \cdot {\bf C}_{V_0} 
+\een
+where the analytic part is independent of $V$ and equal to
+\ben
+K_L^{an} (z,w) = \frac{1}{(4 \pi L)^d} e^{-|z-w|^2/ 4L} \prod_{i=1}^d (\d \zbar_i - \d \zbar_j)  \in \Omega^{0,*} (\CC^d) \tensor \Omega^{0,*} (\CC^d) \cong \Omega^{0,*} (\CC^d \times \CC^d) .
+\een
+
+The propagator for the holomorphic theory $\sE_V$ is defined by
+\ben
+P_{\epsilon < L}^V(z,w) = \int_{t=\epsilon}^L \d t (Q^{GF} \tensor 1) K_{L}^V(z,w) .
+\een
+Since the element ${\bf C}_{V_0}$ is independent of the coordinate on $\CC^d$, the propagator simplifies as $P_{\epsilon < L}^V(z,w) = P_{\epsilon < L}^{an}(z,w) \cdot {\bf C}_{V_0}$ where
+\begin{align*}
+P_{\epsilon < L}^{an}(z,w) & = \int_{t=\epsilon}^L \d t (\dbar^* \tensor 1) K_{L}^V(z,w) \\
+& = \int_{t=\epsilon}^L \d t \frac{1}{(4 \pi t)^d} \sum_{j=1}^d \left(\frac{z_j - w_j}{4 t} \right)  e^{-|z-w|^2 / 4t}  \prod_{i \ne j}^d (\d \zbar_i - \d \zbar_j) .
+\end{align*}
+
+\subsection{Trees}
+
 For the genus zero graphs, or trees, we do not have any analytic difficulties to worry about. 
 The propagator $P_{\epsilon<L}^V$ is smooth so long as $\epsilon,L > 0$ but when $\epsilon \to 0$ it inherits a singularity along the diagonal $z = w$.
 This is what contributes to the divergences in the naive definition of RG flow $W(P_{0<L}, -)$.
@@ -730,7 +784,7 @@ The only possible divergences in the $\epsilon \to 0$ limit, then, must come fro
 
 Every graph of genus one is a wheel with some trees protruding from the external edges of the tree.
 Thus, we can write the weight of a genus one graph as a product of weights associated to trees times the weight associated to a wheel.
-As we just saw, the weights associated to trees are automatically convergent in the $\epsilon \to 0$ limit, thus it suffices to focus on genus one graphs that are purely wheels with some number of external edges.
+We have just observed that the weights associated to trees are automatically convergent in the $\epsilon \to 0$ limit, thus it suffices to focus on genus one graphs that are purely wheels with some number of external edges.
 
 The definition of the weight of the wheel involves placing the propagator at each internal edge and the interaction $I$ at each vertex. 
 The weights are evaluated by placing compactly supported fields $\varphi \in \sE_{V,c} = \Omega^{0,*}_c(\CC^d, V)$ at each of the external edges.
@@ -864,7 +918,7 @@ We will bound the absolute value of the weight in Equation (\ref{weight1}) and s
 First, consider the change of coordinates as in Equations (\ref{coords1}),(\ref{coords2}).
 For any compactly supported function $\Phi$ we see that $W_{\epsilon < L}^{k, (n)} (\Phi)$ has the form
 \be\label{weight2}
-\int_{w^k \in \CC^d} \d^{d} w^k \int_{(w_1,\ldots,w_{k-1}) \in (\CC^d)^{k-1}} \left(\prod_{\alpha=1}^{k-1} \d^{d} w^\alpha\right) \Phi(w^1,\ldots,w^k) \left(\prod_{\alpha=1}^{k-1} \left(\frac{\partial}{\partial w^\alpha}\right)^{\vec{n}^\alpha}P^{an}_{\epsilon < L} (w^\alpha) \right) \sum_{\alpha=1}^{k-1} \left(\frac{\partial}{\partial w^\alpha}\right)^{\vec{n}^k} P^{an} \left(\sum_{\alpha=1}^{k-1} w^\alpha\right) .
+\int_{w^k \in \CC^d} \d^{d} w^k \int_{(w_1,\ldots,w_{k-1}) \in (\CC^d)^{k-1}} \left(\prod_{\alpha=1}^{k-1} \d^{d} w^\alpha\right) \Phi(w^1,\ldots,w^k) \left(\prod_{\alpha=1}^{k-1} \left(\frac{\partial}{\partial w^\alpha}\right)^{\vec{n}^\alpha}P^{an}_{\epsilon < L} (w^\alpha) \right) \sum_{\alpha=1}^{k-1} \left(\frac{\partial}{\partial w^\alpha}\right)^{\vec{n}^k} P^{an}_{\epsilon<L} \left(\sum_{\alpha=1}^{k-1} w^\alpha\right) .
 \ee
 For $\alpha = 1,\ldots,k-1$ the notation $P^{an}_{\epsilon < L} (w^\alpha)$ makes sense since $P^{an}_{\epsilon<L}(z^\alpha,z^{\alpha+1})$ is only a function of $w^\alpha = z^{\alpha+1}-z^\alpha$.
 Similarly $P^{an}_{\epsilon<L}(z^{k+1},z^1)$ is a function of 
@@ -986,10 +1040,12 @@ This concludes the proof.
 %^{n_j^\alpha} \right| 
 \end{proof}
 
+\section{Applications}
 
-\section{Chiral anomalies in arbitrary dimension}
+\subsection{One-loop renormalization for topological theories}
 
-\section{Holomorphic deformations and the QME}
+\subsection{Chiral anomalies in arbitrary dimensions}
+
 
 \end{document}
 
