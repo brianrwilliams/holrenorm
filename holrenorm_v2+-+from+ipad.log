@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  15 AUG 2018 11:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  15 AUG 2018 09:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**holrenorm_v2.tex
-(./holrenorm_v2.tex
+**holrenorm_v2+-+from+ipad.tex
+(./holrenorm_v2+-+from+ipad.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
@@ -914,12 +914,8 @@ File: pppdftex.def 2017/01/14 v0.5h Pdfpages driver for pdfTeX (AM)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
-(./holrenorm_v2.aux
-
-LaTeX Warning: Label `lem: diff applied E' multiply defined.
-
-)
-\openout1 = `holrenorm_v2.aux'.
+No file holrenorm_v2+-+from+ipad.aux.
+\openout1 = `holrenorm_v2+-+from+ipad.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
@@ -936,7 +932,7 @@ LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 22.
- (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1016,10 +1012,8 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 22.
 LaTeX Info: Redefining \pageref on input line 22.
 LaTeX Info: Redefining \nameref on input line 22.
-
-(./holrenorm_v2.out) (./holrenorm_v2.out)
 \@outlinefile=\write5
-\openout5 = `holrenorm_v2.out'.
+\openout5 = `holrenorm_v2+-+from+ipad.out'.
 
 LaTeX Font Info:    Try loading font information for OML+zplm on input line 22.
 
@@ -1088,7 +1082,11 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 36.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 33.
+
+
+LaTeX Warning: Reference `table: holtoBV' on page 1 undefined on input line 33.
+
 
 
 LaTeX Warning: Citation `NekThesis' on page 1 undefined on input line 36.
@@ -1137,8 +1135,12 @@ LaTeX Font Info:    Try loading font information for U+eus on input line 106.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
-) <xymatrix 2x2
-150> [3]
+)
+
+LaTeX Warning: Reference `rmk: hol sec bad' on page 3 undefined on input line 1
+28.
+
+<xymatrix 2x2 150> [3]
 Overfull \hbox (12.96251pt too wide) in paragraph at lines 159--161
 [][]\OT1/ppl/b/n/10 Definition/Lemma 1. []\OT1/ppl/m/n/10 A \OT1/ppl/m/it/10 fr
 ee holo-mor-phic the-ory \OT1/ppl/m/n/10 on a com-plex man-i-fold $\OML/zplm/m/
@@ -1180,7 +1182,26 @@ LaTeX Warning: Citation `GriffithsGreen' on page 6 undefined on input line 289.
 
 LaTeX Warning: Citation `WongChandler' on page 6 undefined on input line 289.
 
-[6] [7] [8]
+[6]
+
+LaTeX Warning: Reference `bracket1' on page 7 undefined on input line 387.
+
+
+LaTeX Warning: Reference `bracket2' on page 7 undefined on input line 387.
+
+
+LaTeX Warning: Reference `bracket3' on page 7 undefined on input line 387.
+
+[7]
+
+LaTeX Warning: Reference `dfn: local fnl' on page 8 undefined on input line 458
+.
+
+[8]
+
+LaTeX Warning: Reference `dfn: interacting' on page 9 undefined on input line 4
+70.
+
 
 LaTeX Warning: Citation `CosRenorm' on page 9 undefined on input line 480.
 
@@ -1212,6 +1233,14 @@ Overfull \hbox (26.75204pt too wide) detected at line 519
  []
 
 
+LaTeX Warning: Reference `dfn: local fnl' on page 10 undefined on input line 53
+1.
+
+
+LaTeX Warning: Reference `dfn hol free theory' on page 10 undefined on input li
+ne 549.
+
+
 Overfull \hbox (9.28358pt too wide) in paragraph at lines 556--559
 \OT1/ppl/m/n/10 Since $\OML/zplm/m/it/10 I[]$ \OT1/ppl/m/n/10 is de-fined us-in
 g holo-mor-phic dif-fer-en-tial op-er-a-tors, we see that $\OT1/zplm/m/n/10 ([]
@@ -1220,7 +1249,12 @@ g holo-mor-phic dif-fer-en-tial op-er-a-tors, we see that $\OT1/zplm/m/n/10 ([]
 ))$\OT1/ppl/m/n/10 .
  []
 
-[10] [11]
+[10]
+
+LaTeX Warning: Reference `table: holtoBV' on page 11 undefined on input line 57
+8.
+
+[11]
 
 LaTeX Warning: Citation `johansen1' on page 12 undefined on input line 628.
 
@@ -1260,6 +1294,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 [13]
 
+LaTeX Warning: Reference `sec: interacting' on page 14 undefined on input line 
+747.
+
+
 LaTeX Warning: Citation `CosRenorm' on page 14 undefined on input line 761.
 
 [14] [15]
@@ -1286,6 +1324,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 LaTeX Warning: Reference `CG2' on page 17 undefined on input line 872.
 
 
+LaTeX Warning: Reference `splitting' on page 17 undefined on input line 887.
+
+
 Overfull \hbox (21.65553pt too wide) in paragraph at lines 899--901
 \OT1/ppl/m/n/10 Since the el-e-ment $\OT1/zplm/b/n/10 C[]$ \OT1/ppl/m/n/10 is i
 n-de-pen-dent of the co-or-di-nate on $\U/fplmbb/m/n/10 C[]$\OT1/ppl/m/n/10 , t
@@ -1293,7 +1334,37 @@ he prop-a-ga-tor sim-pli-fies as $\OML/zplm/m/it/10 P[]\OT1/zplm/m/n/10 (\OML/z
 plm/m/it/10 z\OT1/ppl/m/n/10 , \OML/zplm/m/it/10 w\OT1/zplm/m/n/10 ) =
  []
 
-[17] [18] [19]
+[17] [18]
+
+LaTeX Warning: Reference `lem: hol renorm' on page 19 undefined on input line 9
+80.
+
+
+LaTeX Warning: Reference `weight1' on page 19 undefined on input line 993.
+
+[19]
+
+LaTeX Warning: Reference `productprops2' on page 20 undefined on input line 101
+1.
+
+
+LaTeX Warning: Reference `productprops2' on page 20 undefined on input line 102
+1.
+
+
+LaTeX Warning: Reference `productprops1' on page 20 undefined on input line 103
+1.
+
+
+LaTeX Warning: Reference `weight1' on page 20 undefined on input line 1054.
+
+
+LaTeX Warning: Reference `coords1' on page 20 undefined on input line 1055.
+
+
+LaTeX Warning: Reference `coords2' on page 20 undefined on input line 1055.
+
+
 Overfull \hbox (85.8314pt too wide) detected at line 1059
 [] [][] \OT1/ppl/m/n/10 d[]\OML/zplm/m/it/10 w[] [][] [] \OT1/zplm/m/n/10 ^^H(\
 OML/zplm/m/it/10 w[]\OT1/ppl/m/n/10 , [] , \OML/zplm/m/it/10 w[]\OT1/zplm/m/n/1
@@ -1321,84 +1392,52 @@ lm/m/n/10 )
 LaTeX Warning: Citation `EWY' on page 22 undefined on input line 1148.
 
 
+LaTeX Warning: Reference `weight bound1' on page 22 undefined on input line 114
+9.
+
+
 Overfull \hbox (62.73666pt too wide) in paragraph at lines 1152--1152
 [] 
  []
 
 [22]
 
-LaTeX Warning: Citation `BV' on page 23 undefined on input line 1184.
-
-
-LaTeX Warning: Citation `CosRenorm' on page 23 undefined on input line 1184.
+LaTeX Warning: Reference `weight bound2' on page 23 undefined on input line 115
+9.
 
 [23]
-
-LaTeX Warning: Reference `sec: propagator' on page 24 undefined on input line 1
-218.
-
-[24] [25]
-Overfull \hbox (68.17952pt too wide) detected at line 1357
-[]
- []
-
-[26]
-Overfull \hbox (75.20071pt too wide) detected at line 1377
-[]
- []
-
-[27]
-
-LaTeX Warning: Citation `Adler' on page 28 undefined on input line 1414.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1187.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1187.
+ (./holrenorm_v2+-+from+ipad.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1187.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1187.
 
 
-LaTeX Warning: Citation `BJ' on page 28 undefined on input line 1414.
 
+Package rerunfilecheck Warning: File `holrenorm_v2+-+from+ipad.out' has changed
+.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-LaTeX Warning: Citation `FujikawaSuzuki' on page 28 undefined on input line 143
-0.
-
-
-LaTeX Warning: Reference `chap: symmetries' on page 28 undefined on input line 
-1453.
-
-[28]
-
-LaTeX Warning: Reference `chap: symmetries' on page 29 undefined on input line 
-1464.
-
-
-LaTeX Warning: Citation `THF1' on page 29 undefined on input line 1473.
-
-
-LaTeX Warning: Citation `THF2' on page 29 undefined on input line 1473.
-
-[29]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1485.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1485.
- (./holrenorm_v2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1485.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1485.
-
-Package rerunfilecheck Info: File `holrenorm_v2.out' has not changed.
-(rerunfilecheck)             Checksum: 06618E1D505098DE438223EBA2ACA7DC;840.
-
+Package rerunfilecheck Info: Checksums for `holrenorm_v2+-+from+ipad.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  E3403FE00B767F724747EF53565CCD10;874.
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1485.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1187.
  ) 
 Here is how much of TeX's memory you used:
- 24769 strings out of 492995
- 484943 string characters out of 6132704
- 619628 words of memory out of 5000000
- 27652 multiletter control sequences out of 15000+600000
- 51426 words of font info for 169 fonts, out of 8000000 for 9000
+ 24716 strings out of 492995
+ 484437 string characters out of 6132704
+ 617111 words of memory out of 5000000
+ 27627 multiletter control sequences out of 15000+600000
+ 51126 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,16n,86p,3249b,929s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,16n,86p,3261b,929s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1417,10 +1456,10 @@ mf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texmf-dist
 /fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2017/texmf-dist/fonts
 /type1/public/xypic/xycmat10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/public/xypic/xycmbt10.pfb>
-Output written on holrenorm_v2.pdf (29 pages, 263662 bytes).
+Output written on holrenorm_v2+-+from+ipad.pdf (23 pages, 233688 bytes).
 PDF statistics:
- 375 PDF objects out of 1000 (max. 8388607)
- 323 compressed objects within 4 object streams
- 107 named destinations out of 1000 (max. 500000)
- 109 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 261 PDF objects out of 1000 (max. 8388607)
+ 216 compressed objects within 3 object streams
+ 86 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
