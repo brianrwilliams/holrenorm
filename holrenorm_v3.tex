@@ -713,7 +713,9 @@ We will not do that here, but hope the idea of how to do so is clear.
 
 When working on affine space $\RR^n$ one can ask for a theory to be invariant with respect to translations. 
 In this section, we consider the affine manifold $\CC^d = \RR^{2d}$ equipped with its standard complex structure and define what a {\em holomorphically translation invariant} theory is on it. 
+This particular class of theories has been discussed in Chapter \brian{ref} of \cite{CG2}, and we recall some of the definitions here.
 It will be a very special case of a general holomorphic theory as defined above. 
+Our main result is a classification of the local deformation complex for holomorphic translation invariant theories. 
 
 %The definition we give of a holomorphically translation invariant %theory is slightly different than the structure of the last %section. 
 
@@ -832,13 +834,14 @@ The enveloping algebra of $\CC^{2d|d}$ is of the form
 U(\CC^{2d|d}) = \CC \left[\frac{\partial}{\partial z_i},  \frac{\partial}{\partial \zbar_i}, \eta_i \right]
 \een
 with differential induced from that in $\CC^{2d|d}$. 
-Note that this algebra is quasi-isomorphic to the algebra of constant coefficient holomorphic differential operators $\CC[\partial / \partial z_i] \xto{\simeq} U(\CC^{2d|d})$. 
+Note that this algebra is quasi-isomorphic to the algebra of constant coefficient polynomial holomorphic differential operators $\CC[\partial / \partial z_i] \xto{\simeq} U(\CC^{2d|d})$. 
 
+\brian{fix this given our conventions above}
 Any translation invariant local functional is a sum of functionals of the form
 \ben
-\varphi \mapsto \int_{\CC^d} F(D_1\varphi, \ldots, D_k \varphi)
+\varphi \mapsto \int_{\CC^d} F(D_1\varphi, \ldots, D_k \varphi) \d^d z
 \een
-where $F : V^{\tensor k} \to \CC \cdot \d^d z$ is a linear map and each $D_\alpha$ is an operator in the space 
+where $F : V^{\tensor k} \to \CC$ is a linear map and each $D_\alpha$ is an operator in the space 
 \ben
 \CC \left[\d \zbar_i, \frac{\partial}{\partial z_i}, \frac{\partial}{\partial \zbar_i}, \eta_i \right] .
 \een
@@ -946,6 +949,21 @@ Using the trivialization $V = \CC^d \times V_0$ and $\Omega^{d,hol} = \CC \cdot 
 I_k (\alpha) = \int I^{hol}_k(\alpha) = \int D_{k,1}(\phi_{k,1} (\alpha))\cdots D_{k,k} ( \phi_{k,k}(\alpha)) \d^d z 
 \een
 where each $D_{i,j}$ is a holomorphic differential operator $D_{i,j} \in \CC\left[\frac{\partial}{\partial z_i}\right]$, and $\phi_{i,j} \in V_0^\vee$.
+
+We end with an example.
+
+\begin{eg}
+The BV theory $\sE_V$ of holomorphic BF theory associated to any Lie algebra $\fg$ was discussed in Example \brian{ref}.
+This theory exists on any complex manifold, but when placed on $\CC^d$ it is naturally holomorphically translation invariant.
+The classical theory induces the structure of a local $L_\infty$ algebra on the shifted complex of fields$\sE_V[-1]$, and the deformation complex can be written as the local Lie algebra cohomology $\cloc^*(\sE_V[-1])$.
+
+The dg Lie algebra $\sL = \Omega^{0,*}(X, \fg)$ has the natural structure of a local Lie algebra on any complex manifold $X$.
+Its $!$-dual $\sL^! = \Omega^{d,*}(X, \fg^*)[d]$ has the natural structure of a $\sL$-module where $\fg$ acts on $\fg^*$ by the coadjoint and the Dolbeualt forms act on themselves via wedge product.
+Note that as a local $L_\infty$ algebra $\sE_V[-1]$ can be written as an extension
+\ben
+0 \to \sL^![-3] \to \sE_V[-1] \to \sL \to 0 .
+\een
+\end{eg}
 
 \subsection{Homotopy RG flow}
 
