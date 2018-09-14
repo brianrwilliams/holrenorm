@@ -1,0 +1,229 @@
+\begin{thebibliography}{BCOV94}
+
+\bibitem[Adl69]{Adler}
+Stephen~L. Adler.
+\newblock {Axial vector vertex in spinor electrodynamics}.
+\newblock {\em Phys. Rev.}, 177:2426--2438, 1969.
+
+\bibitem[BCOV94]{BCOV}
+M.~Bershadsky, S.~Cecotti, H.~Ooguri, and C.~Vafa.
+\newblock Kodaira-{S}pencer theory of gravity and exact results for quantum
+  string amplitudes.
+\newblock {\em Comm. Math. Phys.}, 165(2):311--427, 1994.
+
+\bibitem[BD04]{BD}
+Alexander Beilinson and Vladimir Drinfeld.
+\newblock {\em Chiral algebras}, volume~51 of {\em American Mathematical
+  Society Colloquium Publications}.
+\newblock American Mathematical Society, Providence, RI, 2004.
+
+\bibitem[BJ69]{BJ}
+J.~S. Bell and R.~Jackiw.
+\newblock {A PCAC puzzle: $\pi \to \gamma \gamma$ in the sigma model}.
+\newblock {\em Nuovo Cim.}, A60:47--61, 1969.
+
+\bibitem[BR73]{Bernstein}
+I.~N. Bernstein and B.~I. Rosenfeld.
+\newblock Homogeneous spaces of infinite-dimensional {L}ie algebras and the
+  characteristic classes of foliations.
+\newblock {\em Uspehi Mat. Nauk}, 28(4(172)):103--138, 1973.
+
+\bibitem[Bru96]{THF1}
+Marco Brunella.
+\newblock On transversely holomorphic flows. {I}.
+\newblock {\em Invent. Math.}, 126(2):265--279, 1996.
+
+\bibitem[BV81]{BV}
+I.~A. Batalin and G.~A. Vilkovisky.
+\newblock Gauge algebra and quantization.
+\newblock {\em Phys. Lett. B}, 102(1):27--31, 1981.
+
+\bibitem[CG]{CG2}
+Kevin Costello and Owen Gwilliam.
+\newblock Factorization algebras in quantum field theory. {V}ol. 2.
+\newblock available at \url{http://people.mpim-bonn.mpg.de/gwilliam}.
+
+\bibitem[CG17]{CG1}
+Kevin Costello and Owen Gwilliam.
+\newblock {\em Factorization algebras in quantum field theory. {V}ol. 1},
+  volume~31 of {\em New Mathematical Monographs}.
+\newblock Cambridge University Press, Cambridge, 2017.
+
+\bibitem[CL]{CL1}
+Kevin Costello and Si~Li.
+\newblock Twisted supergravity and its quantization.
+\newblock Available at \url{https://arxiv.org/abs/1606.00365}.
+
+\bibitem[Cosa]{CosKos1}
+Kevin Costello.
+\newblock Holography and {K}oszul duality: the example of the {M}2 brane.
+\newblock Available at \url{https://arxiv.org/abs/1705.02500}.
+
+\bibitem[Cosb]{CosM}
+Kevin Costello.
+\newblock M-theory in the {O}mega-background and 5-dimensional non-commutative
+  gauge theory.
+\newblock Available at https://arxiv.org/abs/1610.04144.
+
+\bibitem[Cosc]{CostelloYangian}
+Kevin Costello.
+\newblock {S}upersymmetric gauge theory and the {Y}angian.
+\newblock Available at \url{http://arxiv.org/abs/1303.2632}.
+
+\bibitem[Cos11]{CosRenorm}
+Kevin Costello.
+\newblock {\em Renormalization and effective field theory}, volume 170 of {\em
+  Mathematical Surveys and Monographs}.
+\newblock American Mathematical Society, Providence, RI, 2011.
+
+\bibitem[Cos13]{CostelloHolomorphic}
+Kevin Costello.
+\newblock Notes on supersymmetric and holomorphic field theories in dimensions
+  2 and 4.
+\newblock {\em Pure Appl. Math. Q.}, 9(1):73--165, 2013.
+
+\bibitem[CW04]{WongChandler}
+Karen Chandler and Pit-Mann Wong.
+\newblock Finsler geometry of holomorphic jet bundles.
+\newblock In {\em A sampler of {R}iemann-{F}insler geometry}, volume~50 of {\em
+  Math. Sci. Res. Inst. Publ.}, pages 107--196. Cambridge Univ. Press,
+  Cambridge, 2004.
+
+\bibitem[ES]{EagSab}
+Richard Eager and Ingmar Saberi.
+\newblock Holomorphic field theories and {C}alabi--{Y}au algebras.
+\newblock Available at \url{https://arxiv.org/abs/1805.02084}.
+
+\bibitem[EWY18]{EWY}
+Chris Elliott, Brian Williams, and Philsang Yoo.
+\newblock Asymptotic freedom in the {BV} formalism.
+\newblock {\em J. Geom. Phys.}, 123:246--283, 2018.
+
+\bibitem[FS04]{FujikawaSuzuki}
+Kazuo Fujikawa and Hiroshi Suzuki.
+\newblock {\em Path integrals and quantum anomalies}, volume 122 of {\em
+  International Series of Monographs on Physics}.
+\newblock The Clarendon Press, Oxford University Press, New York, 2004.
+\newblock Translated from the 2001 Japanese original.
+
+\bibitem[Fuk86]{Fuks}
+D.~B. Fuks.
+\newblock {\em Cohomology of infinite-dimensional {L}ie algebras}.
+\newblock Contemporary Soviet Mathematics. Consultants Bureau, New York, 1986.
+\newblock Translated from the Russian by A. B. Sosinski{\u\i}.
+
+\bibitem[Get09]{GetzlerLie}
+Ezra Getzler.
+\newblock Lie theory for nilpotent {$L_\infty$}-algebras.
+\newblock {\em Ann. of Math. (2)}, 170(1):271--301, 2009.
+
+\bibitem[GG80]{GriffithsGreen}
+Mark Green and Phillip Griffiths.
+\newblock Two applications of algebraic geometry to entire holomorphic
+  mappings.
+\newblock In {\em The {C}hern {S}ymposium 1979 ({P}roc. {I}nternat. {S}ympos.,
+  {B}erkeley, {C}alif., 1979)}, pages 41--74. Springer, New York-Berlin, 1980.
+
+\bibitem[GGW]{GGW}
+Owen Gwilliam, Vassily Gorbounov, and Brian Williams.
+\newblock {C}hiral differential operators via {B}atalin-{V}ilkovisky
+  quantization.
+\newblock Available at \url{https://arxiv.org/abs/1610.09657}.
+
+\bibitem[Ghy96]{THF2}
+\'Etienne Ghys.
+\newblock On transversely holomorphic flows. {II}.
+\newblock {\em Invent. Math.}, 126(2):281--286, 1996.
+
+\bibitem[Gui73]{Guillemin}
+Victor~W. Guillemin.
+\newblock Cohomology of vector fields on a manifold.
+\newblock {\em Advances in Math.}, 10:192--220, 1973.
+
+\bibitem[Joh94]{johansen1}
+A.~Johansen.
+\newblock Twisting of {N}=1 susy gauge theories and heterotic topological
+  theories.
+\newblock arXiv:hep-th/9403017, 1994.
+
+\bibitem[KM97]{KM97}
+Andreas Kriegl and Peter~W. Michor.
+\newblock {\em The convenient setting of global analysis}, volume~53 of {\em
+  Mathematical Surveys and Monographs}.
+\newblock American Mathematical Society, Providence, RI, 1997.
+
+\bibitem[Li]{LiVertex}
+Si~Li.
+\newblock {V}ertex algebras and quantum master equation.
+\newblock available at \url{https://arxiv.org/abs/1612.01292}.
+
+\bibitem[LMNS96]{NekCFT}
+Andrei Losev, Gregory Moore, Nikita Nekrasov, and Samson Shatashvili.
+\newblock Four-dimensional avatars of two-dimensional {RCFT}.
+\newblock {\em Nuclear Phys. B Proc. Suppl.}, 46:130--145, 1996.
+\newblock $S$-duality and mirror symmetry (Trieste, 1995).
+
+\bibitem[LMNS97]{NekChiral}
+Andrei Losev, Gregory Moore, Nikita Nekrasov, and Samson Shatashvili.
+\newblock Chiral {L}agrangians, anomalies, supersymmetry, and holomorphy.
+\newblock {\em Nuclear Phys. B}, 484(1-2):196--222, 1997.
+
+\bibitem[Los98]{LosikDiag}
+Mark~V. Losik.
+\newblock Diagonal cohomology of the {L}ie algebra of vector fields.
+\newblock {\em Differential Geom. Appl.}, 8(1):71--86, 1998.
+
+\bibitem[Nek96]{NekThesis}
+Nikita~Alex Nekrassov.
+\newblock {\em Four-dimensional holomorphic theories}.
+\newblock ProQuest LLC, Ann Arbor, MI, 1996.
+\newblock Thesis (Ph.D.)--Princeton University.
+
+\bibitem[Pol98]{Polchinski1}
+Joseph Polchinski.
+\newblock {\em String theory. {V}ol. {I}}.
+\newblock Cambridge Monographs on Mathematical Physics. Cambridge University
+  Press, Cambridge, 1998.
+\newblock An introduction to the bosonic string.
+
+\bibitem[Pop99]{Popov1}
+A.~D. Popov.
+\newblock Holomorphic {C}hern-{S}imons-{W}itten theory: from 2{D} to 4{D}
+  conformal field theories.
+\newblock {\em Nuclear Phys. B}, 550(3):585--621, 1999.
+
+\bibitem[Pop00]{Popov2}
+Alexander~D. Popov.
+\newblock Holomorphic analogs of topological gauge theories.
+\newblock {\em Phys. Lett. B}, 473(1-2):65--72, 2000.
+
+\bibitem[Sta92]{StasheffDG}
+Jim Stasheff.
+\newblock Differential graded {L}ie algebras, quasi-{H}opf algebras and higher
+  homotopy algebras.
+\newblock In {\em Quantum groups ({L}eningrad, 1990)}, volume 1510 of {\em
+  Lecture Notes in Math.}, pages 120--137. Springer, Berlin, 1992.
+
+\bibitem[tHV74]{THooftVelt}
+G.~'t~Hooft and M.~Veltman.
+\newblock One-loop divergencies in the theory of gravitation.
+\newblock {\em Ann. Inst. H. Poincar\'e Sect. A (N.S.)}, 20:69--94, 1974.
+
+\bibitem[Wil]{BWhCDO}
+Brian Williams.
+\newblock Higher dimensional chiral differential operators.
+\newblock To appear.
+
+\bibitem[Wil17]{BWVir}
+Brian Williams.
+\newblock The {V}irasoro vertex algebra and factorization algebras on {R}iemann
+  surfaces.
+\newblock {\em Letters in Mathematical Physics}, Aug 2017.
+\newblock \url{https://doi.org/10.1007/s11005-017-0982-7}.
+
+\bibitem[Wit88]{WittenTwist}
+Edward Witten.
+\newblock Topological quantum field theory.
+\newblock {\em Comm. Math. Phys.}, 117(3):353--386, 1988.
+
+\end{thebibliography}

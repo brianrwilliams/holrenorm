@@ -1,0 +1,24 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Acknowledgements}{3}{subsection.1.1}
+\contentsline {section}{\numberline {2}The definition of a holomorphic field theory}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}A recollection of the BV-BRST formalism}{4}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Classical field theory}{4}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Local functionals}{5}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}The definition of a classical field theory}{6}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.4}A description using $L_\infty $ algebras}{7}{subsubsection.2.1.4}
+\contentsline {subsection}{\numberline {2.2}The definition of a holomorphic field theory}{9}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Free holomorphic theories}{10}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Interacting holomorphic theories}{13}{subsubsection.2.2.2}
+\contentsline {subsection}{\numberline {2.3}Holomorphically translation invariant theories}{21}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Translation invariant interactions}{22}{subsubsection.2.3.1}
+\contentsline {section}{\numberline {3}One-loop regularization for theories on $\PazoBB C^d$}{25}{section.3}
+\contentsline {subsection}{\numberline {3.1}Homotopy RG flow}{26}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Holomorphic gauge fixing}{28}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}The propagator on $\PazoBB C^d$}{29}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Trees}{30}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}A simplification for one-loop weights}{30}{subsection.3.5}
+\contentsline {section}{\numberline {4}Chiral anomalies in arbitrary dimensions}{35}{section.4}
+\contentsline {subsection}{\numberline {4.1}The quantum master equation}{36}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}The QME for holomorphic theories}{37}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Relation to the ABJ anomaly}{41}{subsubsection.4.2.1}
+\contentsline {section}{\numberline {A}Some functional analysis}{43}{appendix.A}

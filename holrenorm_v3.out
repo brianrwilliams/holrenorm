@@ -1,14 +1,17 @@
-\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{The definition of a holomorphic field theory}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{The definition of a holomorphic theory}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Holomorphically translation invariant theories}{section.2}% 4
-\BOOKMARK [1][-]{section.3}{One-loop regularization for theories on Cd}{}% 5
-\BOOKMARK [2][-]{subsection.3.1}{Homotopy RG flow}{section.3}% 6
-\BOOKMARK [2][-]{subsection.3.2}{Holomorphic gauge fixing}{section.3}% 7
-\BOOKMARK [2][-]{subsection.3.3}{The propagator on Cd}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.4}{Trees}{section.3}% 9
-\BOOKMARK [2][-]{subsection.3.5}{A simplification for one-loop weights}{section.3}% 10
-\BOOKMARK [1][-]{section.4}{Chiral anomalies in arbitrary dimensions}{}% 11
-\BOOKMARK [2][-]{subsection.4.1}{The quantum master equation}{section.4}% 12
-\BOOKMARK [2][-]{subsection.4.2}{}{section.4}% 13
-\BOOKMARK [2][-]{subsection.4.3}{Anomaly cancellation}{section.4}% 14
+\BOOKMARK [1][-]{section.1}{1. Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{1.1. Acknowledgements}{section.1}% 2
+\BOOKMARK [1][-]{section.2}{2. The definition of a holomorphic field theory}{}% 3
+\BOOKMARK [2][-]{subsection.2.1}{2.1. A recollection of the BV-BRST formalism}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.2}{2.2. The definition of a holomorphic field theory}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.3}{2.3. Holomorphically translation invariant theories}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{3. One-loop regularization for theories on Cd}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{3.1. Homotopy RG flow}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{3.2. Holomorphic gauge fixing}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.3}{3.3. The propagator on Cd}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.4}{3.4. Trees}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.5}{3.5. A simplification for one-loop weights}{section.3}% 12
+\BOOKMARK [1][-]{section.4}{4. Chiral anomalies in arbitrary dimensions}{}% 13
+\BOOKMARK [2][-]{subsection.4.1}{4.1. The quantum master equation}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.2}{4.2. The QME for holomorphic theories}{section.4}% 15
+\BOOKMARK [1][-]{appendix.A}{Appendix A. Some functional analysis}{}% 16
+\BOOKMARK [1][-]{section*.1}{References}{}% 17
