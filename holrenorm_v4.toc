@@ -15,11 +15,10 @@
 \contentsline {subsection}{\tocsubsection {}{3.1}{Homotopy RG flow}}{26}{subsection.3.1}
 \contentsline {subsection}{\tocsubsection {}{3.2}{Holomorphic gauge fixing}}{27}{subsection.3.2}
 \contentsline {subsection}{\tocsubsection {}{3.3}{The propagator on $\PazoBB C^d$}}{28}{subsection.3.3}
-\contentsline {subsection}{\tocsubsection {}{3.4}{Trees}}{29}{subsection.3.4}
+\contentsline {subsection}{\tocsubsection {}{3.4}{Trees}}{30}{subsection.3.4}
 \contentsline {subsection}{\tocsubsection {}{3.5}{A simplification for one-loop weights}}{30}{subsection.3.5}
-\contentsline {section}{\tocsection {}{4}{Chiral anomalies in arbitrary dimensions}}{35}{section.4}
-\contentsline {subsection}{\tocsubsection {}{4.1}{The quantum master equation}}{35}{subsection.4.1}
+\contentsline {section}{\tocsection {}{4}{Chiral anomalies in arbitrary dimensions}}{36}{section.4}
+\contentsline {subsection}{\tocsubsection {}{4.1}{The quantum master equation}}{36}{subsection.4.1}
 \contentsline {subsection}{\tocsubsection {}{4.2}{The QME for holomorphic theories}}{37}{subsection.4.2}
-\contentsline {subsubsection}{\tocsubsubsection {}{4.2.1}{Relation to the ABJ anomaly}}{41}{subsubsection.4.2.1}
-\contentsline {section}{\tocsection {Appendix}{A}{Some functional analysis}}{42}{appendix.A}
-\contentsline {section}{\tocsection {Appendix}{}{References}}{45}{section*.1}
+\contentsline {subsubsection}{\tocsubsubsection {}{4.2.1}{Relation to the ABJ anomaly}}{42}{subsubsection.4.2.1}
+\contentsline {section}{\tocsection {Appendix}{A}{Some functional analysis}}{43}{appendix.A}

@@ -1351,6 +1351,7 @@ We start with a classical holomorphic theory on $\CC^d$ and study its one-loop h
 This is where the theory is completely well-defined. 
 Explicitly, this flow manifests as a sum over weights of graphs; that is, {\em Feynman diagrams}.
 In terms of diagrams, we consider the sum over graphs of genus at most one where at each vertex we place the holomorphic interaction defining the classical theory.
+The edges of the graphs are labeled by the propagator, which, for us, is an effective replacement for the Green's function of the $\dbar$ operator defining the kinetic piece of the holomorphic field theory.
 
 To obtain a quantization of a classical theory one must make sense of the $\epsilon \to 0$ limit of this construction. 
 In general, this involves introducing a family of {\em counterterms}.
@@ -1503,7 +1504,7 @@ Using the coordinates on $(z_1,\ldots, z_d) \in \CC^d$ we can write this operato
 \ben
 \dbar^* = \sum_{i=1}^d \frac{\partial}{\partial (\d \zbar_i)} \frac{\partial}{\partial z_i} .
 \een
-Equivalently $\frac{\partial}{\partial (\d \zbar_i)}$ is equal to contraction with the anti-holomorphic vector field $\frac{\partial}{\partial \zbar_i}$. 
+The operator $\frac{\partial}{\partial (\d \zbar_i)}$ is the contraction with the anti-holomorphic vector field $\frac{\partial}{\partial \zbar_i}$. 
 The operator $\dbar^*$ extends to the complex of fields via the formula
 \ben
 Q^{GF} = \dbar^* \tensor {\rm id}_V : \Omega^{0,*}(X , V) \to \Omega^{0,*-1}(X, V),
@@ -1518,10 +1519,10 @@ Since $Q^{hol}$ is a translation invariant holomorphic differential operator we 
 \ben
 [\dbar + Q^{hol}, Q^{GF}] = [\dbar,\dbar^*] \tensor \id_{V} .
 \een
-The operator $[\dbar,\dbar^*]$ is simply the Dolbeault Laplacian on $\CC^d$, which 
+The operator $[\dbar,\dbar^*]$ is the Dolbeault Laplacian $\Delta_{\dbar}$ on $\CC^d$, which 
 in coordinates is
 \ben
-[\dbar,\dbar^*] = -\sum_{i=1}^d \frac{\partial}{\partial \zbar_i}\frac{\partial}{\partial z_i} .
+\Delta_{\dbar} = -\sum_{i=1}^d \frac{\partial}{\partial \zbar_i}\frac{\partial}{\partial z_i} .
 \een
 In particular, the operator $[\dbar,\dbar^*] \tensor \id_{V}$ is a generalized Laplacian. 
 
@@ -1542,15 +1543,16 @@ Since this space is affine, hence connected, we can always choose a path to the 
 
 \subsection{The propagator on $\CC^d$}
 
-The gauge fixing operator determines a generalized Laplacian, which for us is essentially the ordinary Hodge Laplacian on $\CC^d$. 
+The gauge fixing operator determines a generalized Laplacian, which for us is essentially the ordinary Dolbeault Laplacian on $\CC^d$. 
 Our regularization scheme utilizes the heat kernel associated to the Laplacian, for which we recall the explicit form below.
-
 By definition, the scale $L>0$ heat kernel is a symmetric element $K_L^V \in \sE_V(\CC^d) \tensor \sE_V(\CC^d)$ that satisfies
 \ben
 \omega_V(K_L, \varphi) = e^{-L[Q,Q^{GF}] } \varphi
 \een
 for any field $\varphi \in \sE_V$.
-For a more detailed definition see Section 8.2.3 in \cite{CG2}. 
+Thus, it is an integral kernel for the operator $e^{-L[Q,Q^{GF}]}$. 
+For a more detailed definition of how heat kernels are used to defined a quantum field theory in the BV formalism, see Section 8.2.3 in \cite{CG2}. 
+In this section we deduce the explicit form of the heat kernel for our holomorphic theory on $\CC^d$. 
 
 The tensor square of $\sE_V(\CC^d)$ decomposes as 
 \be\label{splitting}
@@ -1565,27 +1567,79 @@ Pick a basis $\{e_i\}$ of $V_0$ and let
 be the quadratic Casimir.
 Here, $(\omega_{ij})$ is the inverse matrix to the pairing $(-,-)_{V_0}$. 
 
-The heat kernel splits with respect to the decomposition in Equation \ref{splitting} as
+Due to the nature of our symplectic pairing, we see that the heat kernel splits with respect to the decomposition in Equation (\ref{splitting}) as
 \ben
-K_{L}^V (z,w) = K^{an}_L(z,w) \cdot {\bf C}_{V_0} 
+K_{L}^V (z,w) = K^{an}_L(z,w) \cdot {\bf C}_{V_0} .
 \een
-where the analytic part is independent of $V$ and equal to
-\ben
-K_L^{an} (z,w) = \frac{1}{(4 \pi L)^d} e^{-|z-w|^2/ 4L} \prod_{i=1}^d (\d \zbar_i - \d \zbar_j)  \in \Omega^{0,*} (\CC^d) \tensor \Omega^{0,*} (\CC^d) \cong \Omega^{0,*} (\CC^d \times \CC^d) .
-\een
+The analytic part $K^{an}_L$ is independent of $V$ and equal to the heat kernel for Dolbeault Laplacian $\Delta_{\dbar}$ acting on Dolbeault forms on $\CC^d$. 
 
-The propagator for the holomorphic theory $\sE_V$ is defined by
+We can further split this analytic heat kernel as the heat kernel for the ordinary Laplacian acting on functions. 
+Indeed, for $L>0$ the analytic heat kernel $K_L^{an}$ is equal to
+\ben
+K_L^{an} (z,w) = k_L^{an}(z,w) \prod_{i=1}^d (\d \zbar_i - \d \zbar_j)  \in \Omega^{0,*} (\CC^d) \tensor \Omega^{0,*} (\CC^d) \cong \Omega^{0,*} (\CC^d \times \CC^d) \cong C^\infty(\CC^d \times \CC^d)[\d z, \d w]
+\een
+where $k_L^{an}(z,w) \in C^\infty(\CC^d \times \CC^d)$ is the heat kernel for the Laplacian acting on functions. 
+It is normalized by the rule
+\[
+(e^{- L \Delta_{\dbar}} f)(z) = \int_{w \in \CC^d} \d^{2d} w \; k_L^{an}(z,w) f(w)
+\]
+where $f \in C^\infty(\CC^d)$. 
+Explicitly, $k_L^{an}$ is given by
+\[
+k^{an}_L(z,w) = \frac{1}{(2\pi i L)^d} e^{-|z-w|^2/4L}  .
+\]
+
+The propagator for the holomorphic theory $\sE_V$ is defined using the heat kernels above by the equation
 \ben
 P_{\epsilon < L}^V(z,w) = \int_{t=\epsilon}^L \d t (Q^{GF} \tensor 1) K_{L}^V(z,w) .
 \een
-Since the element ${\bf C}_{V_0}$ is independent of the coordinate on $\CC^d$, the propagator simplifies as $P_{\epsilon < L}^V(z,w) = P_{\epsilon < L}^{an}(z,w) \cdot {\bf C}_{V_0}$ where
+Since the element ${\bf C}_{V_0}$ is independent of the coordinate on $\CC^d$, the propagator also decomposes as 
+\[
+P_{\epsilon < L}^V(z,w) = P_{\epsilon < L}^{an}(z,w) \cdot {\bf C}_{V_0}
+\]
+where
 \begin{align*}
 P_{\epsilon < L}^{an}(z,w) & = \int_{t=\epsilon}^L \d t (\dbar^* \tensor 1) K_{L}^V(z,w) \\
-& = \int_{t=\epsilon}^L \d t \frac{1}{(4 \pi t)^d} \sum_{j=1}^d \left(\frac{z_j - w_j}{4 t} \right)  e^{-|z-w|^2 / 4t}  \prod_{i \ne j}^d (\d \zbar_i - \d \zbar_j) .
+& = \int_{t=\epsilon}^L \d t \frac{1}{(2 \pi i t)^d} \sum_{j=1}^d (-1)^{j-1}  \left(\frac{\zbar_j - \wbar_j}{4 t} \right)  e^{-|z-w|^2 / 4t}  \prod_{i \ne j}^d (\d \zbar_i - \d \zbar_j) .
 \end{align*}
+
+\begin{rmk}
+In the limit as $\epsilon \to 0$ and $L \to \infty$, this propagator reduces to the Green's function for the Dobleault operator on $\CC^d$
+\[
+\dbar P_{0< \infty}(z,w) = \delta_{z=w} .
+\]
+We can see this simplification explicitly. 
+Note that
+\bestar
+P_{\epsilon < L}(z,w) & = & \int_{t = \epsilon}^L \d t e^{- |z-w|^2 / 4t} \frac{1}{(2 \pi i t)^d} \sum_{j = 1}^d (-1)^{j-1} \frac{\zbar_j - \wbar_j}{4t} (\d^d z - \d^d w) \prod_{i \ne j} (\d \zbar_i - \d \wbar_i) \\ & = & \frac{1}{(2 \pi i)^d} \frac{1}{|z-w|^{2d}} \sum_{j} (-1)^{j-1} (\zbar_j - \wbar_j) (\d^d z - \d^d w) \prod_{i \ne j} (\d \zbar_i - \d \wbar_i) \int_{u = |z-w|^2/L}^{|z-w|^2/\epsilon} \d u u^{d-1} e^{-u} .
+\eestar
+In the second line we have made the substitution $u = |z-w|^2 / 4t$. 
+%We see that the differential form part above is proportional to the Bochner-Martinelli kernel $\omega_{BM} \in \Omega^*(\CC^d \times \CC^d \setminus \Delta)$ 
+%\ben
+%\omega_{BM}(z,w) = C_d \frac{1}{|z-w|^{2d}} \sum_{j} (-1)^{j-1} (\zbar_j - \wbar_j) (\d^d z - \d^d w) \prod_{i \ne j} (\d \zbar_i - \d \wbar_i) .
+%\een
+%where $C_d = (d-1)! / (2 \pi i)^d$ is a constant depending only on the dimension $d$.
+%A simple corollary of the above calculation is the following fact that we will use later on in Section \ref{sec: local obs}.
+
+Recall the well-known expression, see Chapter \cite{GriffithsHarris} for instance, for the Green's function of $\dbar$ on $\CC^d$.
+It is given in terms of the {\em Bochner-Martinelli kernel}  $\omega_{BM} \in \Omega^*(\CC^d \times \CC^d \setminus \Delta)$. \brian{finish}
+
+\begin{lem} \label{lem: bm}
+Suppose $z \ne w$. 
+The $\epsilon \to 0, L\to \infty$ the distributional limit of the propagator $P_{\epsilon<L}(z,w)$ exists.
+Moreover, as distributions
+\ben
+\lim_{\epsilon \to 0} \lim_{L \to \infty} P_{\epsilon<L}(z,w) = \omega_{BM}(z,w) .
+\een
+\end{lem}
+
+Thus, the propagator $P_{\epsilon <L}$ is an effective replacement for the Green's function for $\dbar$ on $\CC^d$. 
+
+\end{rmk}
 
 \subsection{Trees}
 
+We now turn to studying the one-loop effective action for the holomorphic theory on $\CC^d$. 
 For the genus zero graphs, or trees, we do not have any analytic difficulties to worry about. 
 The propagator $P_{\epsilon<L}^V$ is smooth so long as $\epsilon,L > 0$ but when $\epsilon \to 0$ it inherits a singularity along the diagonal $z = w$.
 This is what contributes to the divergences in the naive definition of RG flow $W(P_{0<L}, -)$.
