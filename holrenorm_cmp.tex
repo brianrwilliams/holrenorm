@@ -60,9 +60,12 @@ Furthermore, on arbitrary algebraic curves, the phenomena of operator product ex
 This is arguably one of the greatest successes of mathematics in describing a small, albeit important, class of field theories. 
 
 Past dimension one, in complex dimensions two, four and six, an approach to studying special types of holomorphic theories has appeared in the work of Nekrasov and collaborators \cite{NekThesis, NekChiral, NekCFT}. 
-There is a holomorphic version of Chern-Simons theory that has appeared in \cite{Popov1, Popov2}.
-A holomorphic theory of gravity has been proposed in \cite{BCOVafa} and studied most recently in the formalism used here in the work of Costello and Costello-Li \cite{bcov, CL1,CosKos1, CosM}. 
-We will discuss the relationship of our approach to holomorphic field theory to these works throughout this paper.
+In the physics literature, a holomorphic version of Chern-Simons theory has appeared as a twist of 10d supersymmetric Yang-Mills theory \cite{Baulieu} as well as in \cite{Popov1, Popov2}.
+
+A holomorphic theory of gravity has been proposed in \cite{BCOVafa}.
+Recently, Costello and Li \cite{bcov, CL1,CosKos1, CosM} have given a mathematical construction of this theory in the BV formalism and have studied applications to the topological string.
+Our motivation for the definition of a holomorphic quantum field theory is largely based off of an abstraction of the formalism that Costello and Li have developed in their work. 
+Many of the technical methods that are employed here are generalizations of some key results that appear in this work. 
 
 The goal of this paper is two-fold. 
 In the first part the discussion is fairly formal.
@@ -117,7 +120,8 @@ For instance, if $v$ is degree $i$ and $w$ is degree $j$ then $[v,w] = -(-1)^{ij
 \subsection{Acknowledgements}
 
 First, and foremost, the author would like to express his gratitude to Si Li for his guidance and advice in all things related to holomorphic methods in quantum field theory. 
-His work in \cite{LiFeynman} and the work of Si Li and Kevin Costello on BCOV theory in \cite{bcov}, were the main motivations for this work. 
+His work in \cite{LiFeynman} and the work of Si Li and Kevin Costello on BCOV theory in \cite{bcov} were the main motivations for this work. 
+The author learned the methods of renormalization employed here from the work of Costello and Li in \cite{bcov} and by Li in \cite{LiFeynman}.
 %\cite{\brian{finish guidance, advice, inspiration, motivation,}.
 The author would also like to thank Owen Gwilliam for comments and suggestions he made on a previous version of this paper that appeared in the author's thesis. 
 The author would also like to thank Northwestern University, where he received support as a graduate student whilst most of this work took place. 
@@ -1671,17 +1675,9 @@ P_{\epsilon < L}^{an}(z,w) & = \int_{t=\epsilon}^L \d t (\dbar^* \tensor 1) K_{L
 & = \int_{t=\epsilon}^L \d t \frac{1}{(2 \pi i t)^d} \sum_{j=1}^d (-1)^{j-1}  \left(\frac{\zbar_j - \wbar_j}{4 t} \right)  e^{-|z-w|^2 / 4t}  \prod_{i \ne j}^d (\d \zbar_i - \d \wbar_i) .
 \end{align*}
 
-\begin{rmk}
-In the limit as $\epsilon \to 0$ and $L \to \infty$, this propagator reduces to the Green's function for the Dobleault operator on $\CC^d$
-\[
-\dbar P_{0< \infty}(z,w) = \delta_{z=w} .
-\]
+The propagator $P_{\epsilon <L}$ is an effective replacement for the Green's function for $\dbar$ on $\CC^d$. 
+In the limit as $\epsilon \to 0$ and $L \to \infty$, this propagator reduces to the Green's function for the Dobleault operator on $\CC^d$.
 We can see this simplification explicitly. 
-Note that
-\bestar
-P_{\epsilon < L}(z,w) & = & \int_{t = \epsilon}^L \d t e^{- |z-w|^2 / 4t} \frac{1}{(2 \pi i t)^d} \sum_{j = 1}^d (-1)^{j-1} \frac{\zbar_j - \wbar_j}{4t} (\d^d z - \d^d w) \prod_{i \ne j} (\d \zbar_i - \d \wbar_i) \\ & = & \frac{1}{(2 \pi i)^d} \frac{1}{|z-w|^{2d}} \sum_{j} (-1)^{j-1} (\zbar_j - \wbar_j) (\d^d z - \d^d w) \prod_{i \ne j} (\d \zbar_i - \d \wbar_i) \int_{u = |z-w|^2/L}^{|z-w|^2/\epsilon} \d u u^{d-1} e^{-u} .
-\eestar
-In the second line we have made the substitution $u = |z-w|^2 / 4t$. 
 %We see that the differential form part above is proportional to the Bochner-Martinelli kernel $\omega_{BM} \in \Omega^*(\CC^d \times \CC^d \setminus \Delta)$ 
 %\ben
 %\omega_{BM}(z,w) = C_d \frac{1}{|z-w|^{2d}} \sum_{j} (-1)^{j-1} (\zbar_j - \wbar_j) (\d^d z - \d^d w) \prod_{i \ne j} (\d \zbar_i - \d \wbar_i) .
@@ -1689,21 +1685,42 @@ In the second line we have made the substitution $u = |z-w|^2 / 4t$.
 %where $C_d = (d-1)! / (2 \pi i)^d$ is a constant depending only on the dimension $d$.
 %A simple corollary of the above calculation is the following fact that we will use later on in Section \ref{sec: local obs}.
 
-Recall the well-known expression, see Chapter \cite{GriffithsHarris} for instance, for the Green's function of $\dbar$ on $\CC^d$.
-It is given in terms of the {\em Bochner-Martinelli kernel}  $\omega_{BM} \in \Omega^*(\CC^d \times \CC^d \setminus \Delta)$. \brian{finish}
+First, we recall the form of the Green's function.
+Introduce the $\delta$-distribution $\delta_\Delta$ along the diagonal in $\CC^d \times \CC^d$.
+In formulas
+\[
+\delta_{\Delta} : \Omega^{0,*}_c(\CC^d) \times \Omega^{0,*}_c \to \CC \;\; , \;\; (\alpha, \beta) \mapsto \int_{\Delta \subset \CC^d \times \CC^d} \d^d z \wedge \alpha \wedge \beta.
+\]
+The Green's function for $\dbar$ is given in terms of the {\em Bochner-Martinelli kernel}.
+To define it, first consider the smooth form on $\CC^d \times \CC^d$ away from the diagonal
+$\omega_{BM} \in \Bar{\Omega}^{0,*}(\CC_z^d \times \CC_w^d \setminus \Delta)$ given by
+\[
+\omega_{BM}(z,w) = \frac{(d-1)!}{(2\pi i)^d} \frac{1}{|z-w|^{2d}} \sum_{i=1}^d (-1)^{i-1} (\zbar_i - \wbar_i) \prod_{j \ne i} (\d \zbar_j - \d \wbar_j) .
+\]
+Since $\dbar \omega_{BM}(z,w) = 0$ away from the diagonal, we see that $\dbar \omega_{BM}$ extends to a distribution form on $\CC^d \times \CC^d$. 
+Indeed, this distribution solves Green's equation for the $\dbar$-operator
+\[
+\dbar \omega_{BM} \wedge \d^d z = \delta_{\Delta} .
+\] 
+
+For more details on the above kernel and its relation to higher residues, see Chapter 3 of \cite{GriffithsHarris} for instance.
+For now, we have the immediate calculation. 
 
 \begin{lem} \label{lem: bm}
-Suppose $z \ne w$. 
-The $\epsilon \to 0, L\to \infty$ the distributional limit of the propagator $P_{\epsilon<L}(z,w)$ exists.
+The $\epsilon \to 0, L\to \infty$ distributional limit of the propagator $P_{\epsilon<L}(z,w)$ exists.
 Moreover, as distributions
 \ben
-\lim_{\epsilon \to 0} \lim_{L \to \infty} P_{\epsilon<L}(z,w) \wedge \d^d z = \omega_{BM}(z,w) .
+\lim_{\epsilon \to 0} \lim_{L \to \infty} P_{\epsilon<L}(z,w) = \omega_{BM}(z,w) .
 \een
 \end{lem}
-
-Thus, the propagator $P_{\epsilon <L}$ is an effective replacement for the Green's function for $\dbar$ on $\CC^d$. 
-
-\end{rmk}
+\begin{proof}
+Note that
+\bestar
+P_{\epsilon < L}(z,w) & = & \int_{t = \epsilon}^L \d t e^{- |z-w|^2 / 4t} \frac{1}{(2 \pi i t)^d} \sum_{j = 1}^d (-1)^{j-1} \frac{\zbar_j - \wbar_j}{4t} \prod_{i \ne j} (\d \zbar_i - \d \wbar_i) \\ & = & \frac{1}{(2 \pi i)^d} \frac{1}{|z-w|^{2d}} \sum_{j} (-1)^{j-1} (\zbar_j - \wbar_j) \\ & & \times \prod_{i \ne j} (\d \zbar_i - \d \wbar_i) \int_{u = |z-w|^2/L}^{|z-w|^2/\epsilon} \d u u^{d-1} e^{-u} .
+\eestar
+In the second line we have made the substitution $u = |z-w|^2 / 4t$.
+Integration over $u$ produces the desired result. 
+\end{proof}
 
 \subsection{Trees}
 
@@ -1815,7 +1832,7 @@ acting on differential forms on $\CC^{dk}$.
 The operator $\eta^\alpha$ lowers the anti-holomorphic Dolbuealt type by one : $\eta : (p,q) \to (p,q-1)$.
 Equivalently, $\eta^\alpha$ is contraction with the anti-holomorphic Euler vector field $\wbar_i^\alpha \partial / \partial \wbar_i^\alpha$.
 
-\brian{add something like “We will show that the integrand of the graph integral is not a top form and hence the integral is manifestly zero. To do this, we need to identify the Dolbeault type of the form ...”}
+%\brian{add something like “We will show that the integrand of the graph integral is not a top form and hence the integral is manifestly zero. To do this, we need to identify the Dolbeault type of the form ...”}
 
 Once we do this, we see that the expression (\ref{productprops2}) can be written as 
 \ben
@@ -1863,7 +1880,7 @@ exists as a distribution on $\CC^{dk}$.
 \end{lem}
 
 \begin{proof}
-\brian{add comment: “we will use integration by parts to bound the weight of equation (15) by an integral against a Gaussian. Using formulae for moments of a Gaussian, we will get a simple integral in the t parameters.”}
+%\brian{add comment: “we will use integration by parts to bound the weight of equation (15) by an integral against a Gaussian. Using formulae for moments of a Gaussian, we will get a simple integral in the t parameters.”}
 
 We will bound the absolute value of the weight in Equation (\ref{weight1}) and show that it has a well-defined $\epsilon\to 0$ limit.
 First, consider the change of coordinates as in Equations (\ref{coords1}),(\ref{coords2}).
