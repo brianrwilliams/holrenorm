@@ -124,6 +124,7 @@ His work in \cite{LiFeynman} and the work of Si Li and Kevin Costello on BCOV th
 The author learned the methods of renormalization employed here from the work of Costello and Li in \cite{bcov} and by Li in \cite{LiFeynman}.
 %\cite{\brian{finish guidance, advice, inspiration, motivation,}.
 The author would also like to thank Owen Gwilliam for comments and suggestions he made on a previous version of this paper that appeared in the author's thesis. 
+Also, the author thanks Matt Szczesny for discussions and comments made on a more recent version of this paper. 
 The author would also like to thank Northwestern University, where he received support as a graduate student whilst most of this work took place. 
 In addition, the author enjoyed support as a graduate student research fellow under Award DGE-1324585. 
  
@@ -777,7 +778,7 @@ depends only on the holomorphic $\infty$-jet of sections of $V$.
 
 The next definition we will need is that of a holomorphic local functional. 
 Just as in Definition \ref{dfn: local fnl}, this is given by the sheaf of Lagrangians modulo total derivatives. 
-Of course, in this setting we require both the Lagrangians and derivatives to be holomorphic. 
+Of course, in this setting we require both the Lagrangians and derivatives to be holomorphic in the appropriate sense. 
 
 \begin{dfn}
 \label{dfn: interacting}
@@ -785,11 +786,10 @@ The sheaf of {\em holomorphic local functionals} is defined to be the quotient
 \be\label{quotient}
 \olochol(V) := {\rm Lag}^{hol}(V) / \sT_X^{hol} \cdot {\rm Lag}^{hol}(V),
 \ee
-where $\sT_X \cdot {\rm Lag}^{hol}(V)$ denotes the subspace of holomorphic Lagrangians that are in the image of the Lie derivative by some holomorphic vector field.
+where $\sT_X \cdot {\rm Lag}^{hol}(V)$ denotes the subsheaf of holomorphic Lagrangians that are in the image of the Lie derivative by some holomorphic vector field.
 Given a holomorphic Lagrangian $I^{hol} \in {\rm Lag}^{hol}(V)$, we denote its class in local functionals by $\int I^{hol} \in \olochol(V)$. 
 \end{dfn}
 
-\begin{rmk}
 Equivalently, we may express the quotient (\ref{quotient}) using holomorphic $D$-modules in the following way.
 The left $D_{X}^{hol}$-module structure on $J^{hol}(V)$ carries over to a left $D_X^{hol}$-module structure on the product 
 \ben
@@ -799,9 +799,9 @@ Using the natural structure of a right $D_X^{hol}$-module structure on $\Omega^{
 \ben
 \olochol(V) = \Omega^{d,hol}_X \tensor_{D_X^{hol}} \left( \prod_{n > 0} {\rm Hom}_{\sO^{hol}_X} (J^{hol}(V)^{\tensor n}, \sO^{hol}_X)_{S_n}\right) .
 \een
-\end{rmk}
 
-Next, suppose that $V$ is part of the data of a free holomorphic theory $(V, Q^{hol},(-,-)_V)$.
+We use the notion of a holomorphic local functional to formulate the definition of an interacting holomorphic field theory.
+Suppose that $V$ is part of the data of a free holomorphic theory $(V, Q^{hol},(-,-)_V)$.
 The pairing $(-,-)_V$ endows the space of holomorphic local functionals with a bracket on local functionals. 
 Likewise, the operator $Q^{hol}$ determines a differential on local functionals.
 These facts are summarized in the following lemma. 
@@ -809,14 +809,60 @@ These facts are summarized in the following lemma.
 \begin{lem}
 Suppose $(V, Q^{hol},(-,-)_V)$ is the data of a free holomorphic theory. 
 The pairing $(-,-)_V$ (respectively, operator $Q^{hol}$) defines a bracket $\{-,-\}^{hol}$ (respectively, differential $Q^{hol}$) on $\olochol(V)$ of degree $d-1$ (respectively, degree $+1$).
-This yields the structure of a dg Lie algebra on the shift of holomorphic local functionals:
+This yields the structure of a sheaf of dg Lie algebras:
 \ben
 (\olochol(V)[d-1], Q^{hol}, \{-,-\}^{hol}) .
 \een
+where $Q^{hol}$ is the differential, and $\{-,-\}^{hol}$ is the Lie bracket. 
 \end{lem}
 \begin{proof}
+The operator $Q^{hol}$ extends to an operator on holomorphic Lagrangians in the obvious way. 
+Indeed, if a holomorphic Lagrangian is of the form $I^{hol} = \omega \tensor F$ where $F : \sV^{hol} \times \sV^{hol} \to \sO^{hol}$, then we define $Q I^{hol} = \omega \tensor (Q^{hol} F)$.
+This descends to an operator on $\olochol(V)$ of cohomological degree $+1$. 
 
-\brian{fix all in comments into a proof}
+Next, we show how $(-,-)_V$ defines a bracket $\{-,-\}^{hol}$ on the sheaf of holomorphic local functionals. 
+Denote by $\omega^{hol} : \sV^{hol} \tensor_{\sO^{hol}} \sV^{hol} \to \Omega^{d,hol}$ the map of $\sO^{hol}$-modules which sends $\varphi_1 \tensor \varphi_2 \mapsto (\varphi_1, \varphi_2)_V$. 
+A derivation $X$ of the algebra ${\rm Hom}_{\sO^{hol}} (\sV^{hol}, \sO^{hol})$ can be expanded in components of the form
+\[
+X^{(k)} : (\sV^{hol})^{\tensor k} \to \sV^{hol} .
+\]
+Using $\omega^{hol}$, we define the $S_{k+1}$-invariant map of $\sO^{hol}_X$-modules
+\[
+X^{(k)} \vee \omega^{hol} : (\sV^{hol})^{\tensor (k+1)} \to \Omega^{d,hol}
+\]
+which sends $\varphi_1 \tensor \cdots \tensor \varphi_{k+1} \mapsto \omega(\varphi_1, X^{(k)} (\varphi_2, \ldots, \varphi_{k+1}))$. 
+
+Any holomorphic local functional $\int I^{hol} \in \olochol(V)$ is Hamiltonian in the sense that there exists a derivation
+$X_I^{hol}$ such that $\int I^{hol} = \sum_{k \geq 0} X^{(k),hol}_I \vee \omega^{hol}$. 
+Moreover, $X_I^{hol}$ is a local derivation in the sense that it preserves the subspace of local holomorphic functionals. 
+
+Given $\int I^{hol} , \int J^{hol} \in \olochol(V)$, we define 
+\[
+\left\{\int I^{hol} , \int J^{hol} \right\}^{hol} = X_I^{hol} \left(\int J^{hol} \right) \in \olochol(V) .
+\]
+Note that if $\int I^{hol}$ is of total cohomological degree $\ell$, then the derivation $X_{I}^{hol}$ is of degree $\ell + d - 1$. 
+Thus, the bracket $\{-,-\}^{hol}$ is of degree $-d+1$. 
+It is immediate to verify that this bracket satisfies the appropriate graded Jacobi identity and that $Q^{hol}$ acts as a graded derivation. 
+
+%We can assume, without loss of generality, that $\int I^{hol}$ and $\int J^{hol}$ are of polynomial degree $k$ and $\ell$, respectively.
+%This means that 
+%\begin{align*}
+%\int I^{hol} & \in \Omega^{d,hol}_X \tensor_{D_X^{hol}} {\rm Hom}_{\sO^{hol}_X} (J^{hol}(V)^{\tensor k}, \sO^{hol}_X)_{S_n}\\
+%\int J^{hol} & \in \Omega^{d,hol}_X \tensor_{D_X^{hol}} {\rm Hom}_{\sO^{hol}_X} (J^{hol}(V)^{\tensor \ell}, \sO^{hol}_X)_{S_n} . 
+%\end{align*}
+%For simplicity, for the explicit dependence on the fields $\varphi_1,\ldots, \varphi_k \in \sV^{hol}$ we take $\int I^{hol}$ to be
+%\[
+%\int I^{hol} = \int D_1 (\varphi_1) \cdots D_k (\varphi_k) \omega 
+%\]
+%where $D_1,\ldots, D_k : \sV^{hol} \to \sO^{hol}_X$ are holomorphic differential operators and $\omega \in \Omega^{d,hol}_X$.
+%For the dependence on the fields $\varphi_{k+1}, \ldots, \varphi_{k + \ell}$, we take $\int J^{hol}$ to be
+%\[
+%\int J^{hol} = \int D_{k+1} (\varphi_{k+1}) \cdots D_{\ell + k} (\varphi_{\ell+k})  \eta
+%\]
+%where $D_{k+1},\ldots, D_{\ell+k} : \sV^{hol} \to \sO_X^{hol}$ are holomorphic differential operators and $\eta \in \Omega^{d,hol}_X$. 
+%
+%To 
+%\brian{fix all in comments into a proof}
 
 \end{proof}
 %Suppose $\omega \tensor F, \omega' \tensor F' \in {\rm Lag}^{hol}(V)$. 
@@ -1080,7 +1126,7 @@ Holomorphic Lagrangian $I^{hol}$ & Local functional $I = \int I^{\Omega^{0,*}} \
 
 
 
-\begin{eg} {\em Holomorphic $BF$-theory}
+\begin{eg} {\em Holomorphic $BF$-theory} \label{eg: bf}
 Let $\fg$ be a Lie algebra and $X$ any complex manifold.
 Consider the following holomorphic vector bundle on $X$:
 \ben
@@ -1111,7 +1157,7 @@ There is an obvious enhancement that works near any holomorphic principal bundle
 When $d = 2$, in \cite{johansen1}, or for a more mathematical treatment see \cite{CostelloYangian}, it is shown that this theory is a twist of $\cN=1$ supersymmetric pure Yang-Mills on $\RR^4$.
 \end{eg}
 
-\begin{eg} {\em Topological $BF$-theory}
+\begin{eg} {\em Topological $BF$-theory}\label{eg: bftop}
 This is a deformation of the previous example that has appeared throughout the physics literature.
 Suppose we take as our graded holomorphic vector bundle 
 \ben
@@ -1405,6 +1451,28 @@ The proof of the claim follows.
 %0 \to \sL^![-3] \to \sE_V[-1] \to \sL \to 0 .
 %\een
 %\end{eg}
+
+The holomorphic BF system, as in Example \ref{eg: bf}, on $X = \CC^d$ is an example of a holomorphically translation invariant theory. 
+So is the topological BF system, as in Example \ref{eg: bftop}. 
+
+\begin{eg} {\em Holomorphic superpotential.} 
+This is a different flavor of a holomorphically translation invariant theory involving the $\beta\gamma$ system and is largely motivated by physics. 
+Consider the $\beta\gamma$ system on $\CC^d$ with values in $V$. 
+In addition, let $W \in \CC[V]$ be a polynomial on the vector space $V$. 
+Then, $W$ extends in a natural way to a Dolbeault valued functional on $\Omega^{0,*}(\CC^d) \tensor V$. 
+One defines the local functional
+\[
+I_W (\beta, \gamma) = \int_{\CC^d} \d^d z \; W(\gamma) .
+\] 
+It is immediate to see that $I_W$ is holomorpically translation invariant. 
+On the other hand, it is not, in general, a degree {\em zero} functional. 
+Hence, it does not define a classical theory in the usual sense. 
+It does, however, define a slightly weaker classical theory that is only $\ZZ/2$ graded rather than the usual $\ZZ$ grading we are accustomed to.
+ 
+We don't develop the formal definition here, but $I_W$ defines a holomorpically translation invariant $\ZZ/2$-graded BV theory. 
+When $d=2$, the $\beta\gamma$ system arises as the minimal twist of the free $\cN = 1$ chiral supermultiplet on $\RR^4$. 
+In the presence of the interaction $I_W$, the theory is equal to the minimal twist of the $\cN=1$ chiral multiplet with {\em holomorphic superpotential} given by $W$. \footnote{In super language, the superpotential term is usually written as $\int d^2 \theta \int \d^4 x W(\Phi)$, where $\Phi$ is the chiral superfield.}
+\end{eg}
 
 
 \section{One-loop regularization for theories on $\CC^d$} \label{sec: hol renorm}
@@ -2115,9 +2183,9 @@ Applying the operator $Q + \hbar \Delta_L$ to both sides, we obtain
 (Q + \hbar \Delta_L) e^{I[L]/\hbar} = \lim_{\epsilon \to 0} (Q + \hbar \Delta_L)  \left(e^{\hbar \partial_{P_{\epsilon<L}}} e^{I / \hbar}\right) .
 \een
 
-The operator $Q$ commutes with $e^{\hbar \partial_{P_{\epsilon < L}}}$.
-Moreover, one has $\Delta_L e^{\hbar \partial_{P_{\epsilon < L}}} = e^{\hbar \partial_{P_{\epsilon < L}}} \Delta_\epsilon$ as operators acting on functionals. 
-Thus, 
+The operator $Q$ satisfies $[Q, \partial_{P_{\epsilon<L}}] = \Delta_L - \Delta_\epsilon$. 
+So, acting on functionals one has $(Q + \hbar \Delta_L) e^{\hbar \partial_{P_{\epsilon<L}}} = e^{\hbar \partial_{P_{\epsilon<L}}} (Q + \hbar \Delta_\epsilon)$. 
+The above then simplifies to
 \ben
 \lim_{\epsilon \to 0} (Q + \hbar \Delta_L)  \left(e^{\hbar \partial_{P_{\epsilon<L}}} e^{I / \hbar}\right) = \lim_{\epsilon \to 0}  e^{\hbar \partial_{P_{\epsilon < L}}} (Q + \hbar \Delta_\epsilon) e^{I / \hbar} .
 \een
@@ -2127,7 +2195,7 @@ Since $\Delta_\epsilon$ is a BV operator with respect to the bracket $\{-,-\}_{\
 \een
 
 For every $\epsilon > 0$ we have $\Delta_\epsilon I = 0$.
-This is because $I$ is a local functional and $\Delta_{\epsilon}$ involves contraction with a factor of $\prod (\d \zbar_i - \d \wbar_i)$.
+This is because $I$ is a local functional and $\Delta_{\epsilon}$ involves contraction with a factor of $\prod (\d \zbar_i - \d \wbar_i)$ which vanishes along the diagonal.
 Moreover, since $I$ comes from a holomorphic Lagrangian we have $\dbar I = 0$.
 
 Thus, the only terms remaining inside the parantheses in the above expression are $Q^{hol} I + \frac{1}{2} \{I,I\}_{\epsilon}$. 
