@@ -1,0 +1,133 @@
+\documentclass[11pt]{amsart}
+
+\pdfoutput = 1
+
+\usepackage{macros,slashed,amsaddr}
+
+\linespread{1.5}
+
+\setcounter{tocdepth}{2}
+\numberwithin{equation}{section}
+\newcommand{\nocontentsline}[3]{}
+\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
+\newcommand{\changelocaltocdepth}[1]{%
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{#1}}%
+  \setcounter{tocdepth}{#1}%
+}
+\setcounter{tocdepth}{1}
+
+\def\brian{\textcolor{blue}{BW: }\textcolor{blue}}
+\def\ingmar#1{{\textcolor{green!65!black}{IAS: {#1}}}}
+
+\def\Dol{{\rm Dol}}
+\def\dR{{\rm dR}}
+\def\Dol{{\rm Dol}}
+\def\dR{{\rm dR}}
+\def\vC{{\rm\check{C}}}
+\def\vI{\check{I}}
+
+\begin{document}
+
+\title{Cech field theory}
+
+\author{Brian R. Williams}
+\address{Department of Mathematics, Northeastern University \\ 567 Lake Hall \\ Boston, MA 02115 \\ U.S.A.}
+\email{br.williams@northeastern.edu}
+
+\maketitle
+
+\section{The general construction}
+
+Let $E, F$ be two holomorphic vector bundles on $X$. 
+Define the subspace
+\[
+\Omega^{(p,q);(r,s)} (X \times X , V \boxtimes W) \subset \Omega^{p+r, q+s} (X \times X , V \boxtimes W) .
+\]
+
+If $k \in \Omega^{(0,q), (n, n-s)} (X \times X , E \boxtimes E^*)$, then define the operator $\ul{k} : \Omega^{0,s}_c(X , E) \to \Omega^{0,q}(X, E)$ by the formula
+\[
+(\ul{k} \alpha)(x) = \int_{y \in X} k(x, y) \alpha(y) .
+\]
+We call $k$ the kernel of the smoothing operator $\ul{k}$.
+
+For an open set $W \subset X \times X$, denote by 
+\[
+\sR^{r}(W 
+\]
+
+\section{Preliminary definitions}
+
+Let $(E, Q, \omega)$ be the data of a free BV theory on a manifold $X$.
+The sheaf of local functionals $\oloc(\sE)$ is equipped with the BV bracket $\{-,-\}$ of cohomological degree $+1$ and a differential induced by $Q$ which we denote by the same letter.
+We also fix an open cover $\sU$ for $X$. 
+
+Consider the \v{C}ech complex $\vC^\bu(\sU, \oloc(\sE))$ of the sheaf of local functionals. 
+Recall that $\oloc(\cE)$ has an internal cohomological degree and differential $Q$. 
+The complex we consider is the totalization of the bigraded complex consisting of the \v{C}ech differential $\delta$ and the differential $Q$. 
+
+Together with the cup product on the \v{C}ech complex, the BV bracket endows $\vC^\bu(\sU, \oloc(\sE))$
+with a bracket that we denote by $\{-,-\}^{\vee}$. 
+For fixed \v{C}ech degrees $k, \ell$, it is defined by the composition
+\[
+\vC^k(\sU, \oloc(\sE)) \otimes \vC^\ell (\sU, \oloc(\sE)) \xto{\cup} \vC^{k + \ell} (\sU, \oloc(\sE) \otimes \oloc(\sE)) \xto{\{-,-\}} \vC^{k + \ell} (\sU, \oloc(\sE) \otimes \oloc(\sE))
+\]
+Explicitly, if $I$ is a $k$-cochain and $J$ is an $\ell$-cochain, then $\{I,J\}$ is the $(k+\ell)$-cochain defined by
+\[
+\{I,J\}^\vee_{\alpha_0 \cdots \alpha_{k+\ell}} = \{I_{\alpha_0 \cdots \alpha_k}, J_{\alpha_k \cdots \alpha_{k + \ell}}\}
+\]
+where the right-hand side is the usual BV bracket.
+
+The bracket $\{-,-\}$ endows the shift of local functionals $\oloc (\sE)[-1]$ with the structure of a sheaf of dg Lie algebras, where the differential is given by $Q$. 
+Similarly, $\{-,-\}^{\vee}$ gives $\vC^\bu(\sU, \oloc(\sE))[-1]$ the structure of a dg Lie algebra.
+
+\begin{lem}
+For any open cover $\sU$ the complex $\vC^\bu(\sU, \oloc(\sE))[-1]$ is a dg Lie algebra where the differential is $\delta + Q$ and the bracket is $\{-,-\}^\vee$. 
+\end{lem}
+
+\begin{dfn}
+A {\bf \v{C}ech local functional} for an open cover $\sU$ of $X$ is an element 
+\[
+\vI \in \vC^\bu (\sU , \oloc(\sE)) .
+\]
+Suppose $\vI$ is of cohomological degree zero.
+The {\bf \v{C}ech classical master equation} is the Maurer-Cartan equation
+\[
+(\delta + Q) \vI + \frac{1}{2} \{\vI,\vI\}^{\vee} = 0 .
+\] 
+\end{dfn}
+
+A \v{C}ech local functional $\vI$ of degree zero determines a degree $+1$ element in the dg Lie algebra $\vC^\bu(\sU, \oloc(\sE))[-1]$. 
+The condition that this local functional satisfy the \v{C}ech classical master equation is equivalent to the condition that it is a Maurer-Cartan element. 
+
+\begin{dfn}
+A {\bf \v{C}ech classical field theory on} $X$ for the open cover $\cU$ is a free BV theory $(E, Q, \omega)$ on $X$ together with a degree zero \v{C}ech local functional $\vI$ satisfying the \v{C}ech classical master equation. 
+\end{dfn}
+
+Fix a partition of unity $\rho = \{\rho_\alpha\}$ subordinate to the cover $\sU$ of $X$. 
+For any sheaf $\cF$ on $X$ we define the map
+\[
+\sD_{\rho} : \vC^\bu(\sU , \sF) \to \sF(X) 
+\]
+by \brian{?}
+
+\begin{lem}
+The map of cochain complexes
+\[
+\sD_{\rho} : \vC^\bu(\sU, \oloc(\sE))[-1] \to \oloc(\sE)(X)[-1]
+\]
+is a map of dg Lie algebras. 
+In particular, every \v{C}ech local functional $\vI$ satisfying the \v{C}ech master equation defines a local functional $I_{\sU, \rho} = \sD_\rho(\vI)$ which satisfies the usual classical master equation on $X$. 
+\end{lem}
+
+As an immediate corollary, we see that once we choose a partition of unity, every \v{C}ech classical theory $(E, Q, \omega, \vI)$ on $X$ defines an ordinary BV theory where the local interaction is given by $I_{\cU, \rho} = \sD_{\rho} (\vI)$. 
+
+\begin{lem}
+\brian{How does $I_{\cU,\rho}$ depend on the cover and $\rho$.}
+\end{lem}
+
+In fact, for nice enough covers even more is true.
+\brian{how to say this} $\sU$ is \brian{nice enough} the map $\sD$ is a quasi-isomorphism of dg Lie algebras.
+In this case, we see that there is an equivalence between \v{C}ech local functionals satisfying the \v{C}ech master equation and local functionals satisfying the usual master equation. 
+
+
+\end{document}
