@@ -25,6 +25,7 @@
 \def\dR{{\rm dR}}
 \def\vC{{\rm\check{C}}}
 \def\vI{\check{I}}
+\def\vomega{\check{\omega}}
 
 \begin{document}
 
@@ -52,8 +53,94 @@ We call $k$ the kernel of the smoothing operator $\ul{k}$.
 
 For an open set $W \subset X \times X$, denote by 
 \[
-\sR^{r}(W 
+\sR^{r}(W , E \boxtimes E^*) \subset \Omega^{(0,\bu), (n, \bu)} (W \setminus \Delta , E \boxtimes E^*)
 \]
+the subspace of forms of type $(0,\bu) \times (n,\bu)$ which are regular of order $r$. 
+Note that 
+\[
+\sR^{r}(W , E \boxtimes E^*) \subset \sR^{r+1}(W , E \boxtimes E^*) .
+\]
+Also, note that $\sR^{r}(W , E \boxtimes E^*)$ is {\em not} a chain complex since it increases order
+\[
+\dbar : \sR^{r}(W , E \boxtimes E^*) \to \sR^{r+1}(W , E \boxtimes E^*) .
+\]
+
+\begin{eg}
+The Bochner--Martinelli kernel $\omega_{\rm \CC^n} \in \Omega^{(0,n-1), (n, n-1)}(\CC^n \times \CC^n \setminus \Delta)$ is regular of order $-1$:
+\[
+\omega_{\rm \CC^n} \in \sR^{-1}(\CC^n \times \CC^n) .
+\]
+\end{eg}
+
+Of course, given any open subset of $\CC^n$ we can restrict the Bochner--Martinelli kernel to get a fundamental solution of $\dbar$ on the open neighborhood. 
+Slightly more generally, there is the following.
+
+\begin{lem}
+Let $U \subset \CC^n$ be an open set, and suppose $V_0$ is any complex vector space.
+Then
+\[
+\omega_{\CC^n}|_{U} \otimes {\rm Id}_V \in \sR^{-1}(U \times U , V_0 \otimes V_0^*)
+\]
+is a fundamental solution for $\dbar$ on $\Omega^{0,\bu}(U) \otimes V_0$. 
+\end{lem}
+
+Here is the general procedure.
+
+Let $\sU = \{U_\alpha\}$ with coordinate maps $\{\varphi_\alpha : U_\alpha \to \CC^n\}$. 
+Set $W_\alpha = U_\alpha \times U_\alpha$. 
+Let 
+\[
+\omega_\alpha = (\varphi_\alpha \times \varphi_\alpha)^* \omega_{\CC^n} \in \sR^{-1}(W_\alpha) .
+\]
+
+\begin{dfn}
+A \v{C}ech parametrix is a sequence $\vomega = (\omega^{(0)}, \ldots, \omega^{(n-1)})$ where:
+\begin{itemize}
+\item $\omega_{\alpha_0 \cdots \alpha_r}^{(r)} \in \sR^{-r-1}(W_{\alpha_0 \cdots \alpha_r})$ for $W_{\alpha_0 \cdots \alpha_{r}}$ a neighborhood of $\Delta \subset X \times X$
+\end{itemize}
+which together satisfy the equation
+\[
+(\delta \omega^{(r-1)})_{\alpha_0 \cdots \alpha_{r}} |_{W_{\alpha_0 \cdots \alpha_{r}}} = \dbar \omega^{(r)}_{\alpha_0\cdots \alpha_{r}}
+\]
+for each $1 \leq r \leq n-1$.
+\end{dfn}
+
+Given a \v{C}ech parametrix $\vomega$, define
+\[
+\omega^{(n)} = \delta \omega^{(n-1)} .
+\]
+
+We obtain a global solution as follows.
+Let $\rho_\alpha \in C^\infty_c(W_\alpha)$ be a collection of compactly supported maps satisfying the two conditions:
+\begin{itemize}
+\item $\sum_{\alpha} \rho_\alpha = 1$ in some neighborhood of $\Delta \subset X \times X$;
+\item ${\rm supp}(\rho_{\alpha_0} \cdots \rho_{\alpha_r}) \subset W_{\alpha_0 \cdots \alpha_r}$. 
+\end{itemize}
+Define the graded linear map
+\[
+\sD : \prod_{\alpha_0 \cdots \alpha_r} A^{n,\bu}(W_{\alpha_0 \cdots \alpha_r} - \Delta) \to \Omega^{n, \bu + r} (X \times X - \Delta)
+\]
+by
+\[
+\sD (\sigma^{(r)}) = \sum_{\alpha_0 \cdots \alpha_r} \rho_{\alpha_r} \dbar \rho_{\alpha_{r-1}} \cdots \dbar \rho_{\alpha_0} \sigma^{(r)}_{\alpha_0 \cdots \alpha_r} .
+\]
+
+\begin{thm}
+Let $\vomega$ be a \v{C}ech parametrix on $X$ and $\{\rho_\alpha\}$ a collection of compactly supported maps as above.
+Then
+\[
+\omega_X = \sum_{r = 0}^{n-1} (-1)^r \sD(\omega^{(r)}) \in \sR^{-1}(X \times X , E \boxtimes E^*)
+\]
+is a parametrix for the $\dbar$ on $X$:
+\[
+\dbar \ul{\omega}_X + \ul{\omega}_X \dbar = 1 - \ul{s}
+\]
+where $\ul{s}$ is a smoothing operator whose kernel satisfies
+\[
+s = \sD(\omega^{(n)})
+\]
+in some neighborhood of $\Delta \subset X \times X$.
+\end{thm}
 
 \section{Preliminary definitions}
 
