@@ -5,10 +5,10 @@
 %Formatting
 \linespread{1.25}
 
-\usepackage{parskip}
-\setlength{\parindent}{18pt}
-\setlength{\parindent}{0cm}
-
+%\usepackage{parskip}
+%\setlength{\parindent}{18pt}
+%\setlength{\parindent}{0cm}
+%
 \setcounter{tocdepth}{2}
 \setcounter{secnumdepth}{5}
 
@@ -124,8 +124,8 @@ His work in \cite{LiFeynman} and the work of Si Li and Kevin Costello on BCOV th
 The author learned the methods of renormalization employed here from the work of Costello and Li in \cite{bcov} and by Li in \cite{LiFeynman}.
 %\cite{\brian{finish guidance, advice, inspiration, motivation,}.
 The author would also like to thank Owen Gwilliam for comments and suggestions he made on a previous version of this paper that appeared in the author's thesis. 
-Also, the author thanks Matt Szczesny for discussions and comments made on a more recent version of this paper. 
-The author would also like to thank Northwestern University, where he received support as a graduate student whilst most of this work took place. 
+Also, the author thanks Matt Szczesny for discussions related to, and comments made on, a more recent version of this paper. 
+The author would also like to thank Northwestern University, where he received support as a graduate student whilst most of this work took place.
 In addition, the author enjoyed support as a graduate student research fellow under Award DGE-1324585. 
  
 \section{The definition of a holomorphic field theory}
@@ -809,9 +809,10 @@ These facts are summarized in the following lemma.
 \begin{lem}
 Suppose $(V, Q^{hol},(-,-)_V)$ is the data of a free holomorphic theory. 
 The pairing $(-,-)_V$ (respectively, operator $Q^{hol}$) defines a bracket $\{-,-\}^{hol}$ (respectively, differential $Q^{hol}$) on $\olochol(V)$ of degree $d-1$ (respectively, degree $+1$).
+
 This yields the structure of a sheaf of dg Lie algebras:
 \ben
-(\olochol(V)[d-1], Q^{hol}, \{-,-\}^{hol}) .
+\left(\olochol(V)[d-1], Q^{hol}, \{-,-\}^{hol}\right)
 \een
 where $Q^{hol}$ is the differential, and $\{-,-\}^{hol}$ is the Lie bracket. 
 \end{lem}
@@ -976,7 +977,7 @@ Here, $\varphi_i\in \sV^{hol}$ is a holomorphic section, and each $D_{i_j}$ is a
 In general, suppose $V,W$ are holomorphic vector bundles.
 Every holomorphic differential operator $D : \sV \to \sW$ extends to a {\em smooth} differential operator on the associated Dolbeualt complexes with the property that it is compatible with the $\dbar$-operator on both sides.
 
-To see how this works, suppose $D : \sV^{hol} \to \sW^{hol}$ is locally of the form $D = \sum_{m_1,\ldots,m_d} a_{m_1\cdots m_d}(z)\frac{\partial^{m_1}}{\partial z_1^{m_1}} \cdots \frac{\partial^{m_d}}{\partial z^{m_d}}$, where $a_{m_1\cdots m_d}(z)$ denotes a local holomorphic section of ${\rm Hom}(V,W)$. 
+To see how this works, suppose $D : \sV^{hol} \to \sW^{hol}$ is locally of the form $$D = \sum_{m_1,\ldots,m_d} a_{m_1\cdots m_d}(z)\frac{\partial^{m_1}}{\partial z_1^{m_1}} \cdots \frac{\partial^{m_d}}{\partial z^{m_d}}$$ where $a_{m_1\cdots m_d}(z)$ denotes a local holomorphic section of ${\rm Hom}(V,W)$. 
 Then, if $\alpha = s_I (z,\zbar) \d \zbar_I \in \Omega^{0,*}(X, V)$, where $s_I$ is a local {\em smooth} section of $V$, we define
 \ben
 D^{\Omega^{0,*}} \alpha = \sum_{m_1,\ldots,m_d} a_{m_1\cdots m_d} (z)\left(\frac{\partial^{m_1}}{\partial z_1^{m_1}} \cdots \frac{\partial^{m_d}}{\partial z^{m_d}} s_I(z,\zbar)\right) \d \zbar_I \in \Omega^{0,*}(X, W) .
@@ -1063,7 +1064,7 @@ The composition of (\ref{def eqn1}) and (\ref{def eqn2}) is simply the map (\ref
 \een
 One checks immediately that this map is compatible with the brackets, namely 
 \ben
-\{I^{hol}, J^{hol}\}^{hol} = \{\int I^{\Omega^{0,*}}, \int J^{\Omega^{0,*}}\} .
+\{\int I^{hol}, \int J^{hol}\}^{hol} = \{\int I^{\Omega^{0,*}}, \int J^{\Omega^{0,*}}\} .
 \een
 
 %$D_X$-modules between $\sO_{red}(J \Omega^{0,*}(X , V))$ and $\sO_{red}(J^{hol}V)$. 
@@ -1954,7 +1955,9 @@ We will bound the absolute value of the weight in Equation (\ref{weight1}) and s
 First, consider the change of coordinates as in Equations (\ref{coords1}),(\ref{coords2}).
 For any compactly supported function $\Phi$ we see that $W_{\epsilon < L}^{k, (n)} (\Phi)$ has the form
 \be\label{weight2}
-\int_{w^k \in \CC^d} \d^{d} w^k \int_{(w_1,\ldots,w_{k-1}) \in (\CC^d)^{k-1}} \left(\prod_{\alpha=1}^{k-1} \d^{d} w^\alpha\right) \Phi(w^1,\ldots,w^k) \left(\prod_{\alpha=1}^{k-1} \left(\frac{\partial}{\partial w^\alpha}\right)^{\vec{n}^\alpha}P^{an}_{\epsilon < L} (w^\alpha) \right) \sum_{\alpha=1}^{k-1} \left(\frac{\partial}{\partial w^\alpha}\right)^{\vec{n}^k} P^{an}_{\epsilon<L} \left(\sum_{\alpha=1}^{k-1} w^\alpha\right) .
+\begin{array}{lllllll}
+\displaystyle \int_{w^k \in \CC^d} \d^{d} w^k \int_{(w_1,\ldots,w_{k-1}) \in (\CC^d)^{k-1}} & \displaystyle\left(\prod_{\alpha=1}^{k-1} \d^{d} w^\alpha\right) \Phi(w^1,\ldots,w^k) \left(\prod_{\alpha=1}^{k-1} \left(\frac{\partial}{\partial w^\alpha}\right)^{\vec{n}^\alpha}P^{an}_{\epsilon < L} (w^\alpha) \right) \\ & \displaystyle \times \sum_{\alpha=1}^{k-1} \left(\frac{\partial}{\partial w^\alpha}\right)^{\vec{n}^k} P^{an}_{\epsilon<L} \left(\sum_{\alpha=1}^{k-1} w^\alpha\right) .
+\end{array}
 \ee
 For $\alpha = 1,\ldots,k-1$ the notation $P^{an}_{\epsilon < L} (w^\alpha)$ makes sense since $P^{an}_{\epsilon<L}(z^\alpha,z^{\alpha+1})$ is only a function of $w^\alpha = z^{\alpha+1}-z^\alpha$.
 Similarly $P^{an}_{\epsilon<L}(z^{k+1},z^1)$ is a function of 
@@ -1998,7 +2001,9 @@ D_{\alpha, i_\alpha}(t) := \left(\frac{\partial}{\partial w^\alpha_{i_\alpha}} -
 ^{n_j^\alpha} .
 \een
 \begin{rmk}
-This operator has appeared in the proof of Lemma 7.3.1 of \cite{bcov} and is motivated by a trick the author has learned from Si Li, first executed in \cite{LiFeynman} in the context of $2$-dimensional chiral theories on elliptic curves.
+This operator, and method to bound the integral, has appeared in the proof of Lemma 7.3.1 of \cite{bcov} and is motivated by a trick the author has learned from Si Li, first executed in \cite{LiFeynman} in the context of $2$-dimensional chiral theories on elliptic curves.
+We propose that this method be referred to as “Si’s trick” for reducing the divergence of Feynman integrals of this type.
+We have further generalized this method in \cite{GWcs} to a wider class of quantum field theories. 
 \end{rmk}
 The following lemma is an immediate calculation
 \begin{lem}\label{lem: diff applied E}
@@ -2018,9 +2023,11 @@ Thus, we can integrate by parts iteratively to obtain the following expression f
 \een
 %\brian{all the differential operators $D_{\alpha, i_\alpha}$ are uniformly bounded in $t$. To make these precise I should find what the uniform bound is.}
 
-Thus, the absolute value of the weight is bounded by 
+Since the operators $D_{i,j}$ are uniformly bounded in the variables $t_1, \ldots, t_k$, the absolute value of the weight is bounded by 
 \be\label{weight bound1}
-|W_{\epsilon < L}^{k, (n)}(\Phi)| \leq C \int_{w^k \in \CC^d} \d^{2d} w^k \int_{(w^1,\ldots,w^{k-1}} \prod_{\alpha=1}^{k-1} \d^{2d} w^\alpha \Psi(w^1,\ldots,w^{k-1},w^k) \int_{(t_1,\ldots,t_k) \in [\epsilon,L]^k} \d t_1 \ldots \d t_k \frac{1}{(4\pi)^{dk}} \frac{1}{t^d_1\cdots t^d_k} \times E(w,t)
+\begin{array}{lllll}
+\displaystyle |W_{\epsilon < L}^{k, (n)}(\Phi)| \leq C \int_{w^k \in \CC^d} \d^{2d} w^k & \displaystyle \int_{(w^1,\ldots,w^{k-1}} \prod_{\alpha=1}^{k-1} \d^{2d} w^\alpha \Psi(w^1,\ldots,w^{k-1},w^k) \\ & \displaystyle \times  \int_{(t_1,\ldots,t_k) \in [\epsilon,L]^k} \d t_1 \ldots \d t_k \frac{1}{(4\pi)^{dk}} \frac{1}{t^d_1\cdots t^d_k} \times E(w,t)
+\end{array}
 \ee
 where $\Psi$ is some compactly supported functnio on $\CC^{dk}$ that is independent of $t$. 
 
@@ -2048,7 +2055,6 @@ After some straightforward linear algebra we find that
 We now perform a Wick expansion for the Gaussian integral in the variables $(w^1,\ldots,w^{k-1})$.
 For a reference similar to the notation used here see the Appendix of our work in \cite{EWY}.
 The inequality in (\ref{weight bound1}) becomes
-\brian{add a remark that the $D$'s are uniformly bounded in $t$.}
 
 \begin{align}\label{weight bound2}
 |W_{\epsilon < L}^{k, (n)}(\Phi)| & \leq C' \int_{w^k \in \CC^d} \d^{2d} w^k \Psi(0, \ldots, 0, w^k) \int_{(t_1,\ldots,t_k) \in [\epsilon,L]^k} \d t_1 \ldots \d t_k \frac{1}{(4\pi)^{dk}} \frac{1}{(t_1\cdots t_k)^d}\left(\frac{t_1\cdots t_k}{t_1+\cdots+t_k}\right)^d + O(\epsilon) \\ & = C' \int_{w^k \in \CC^d} \d^{2d} w^k \Psi(0, \ldots, 0, w^k) \int_{(t_1,\ldots,t_k) \in [\epsilon,L]^k} \d t_1 \ldots \d t_k \frac{1}{(4\pi)^{dk}} \frac{1}{(t_1+\cdots+t_k)^d} + O(\epsilon) .
@@ -2308,7 +2314,7 @@ Thus, as a over a sum of graphs, we see that the following two types of weights 
 \item the distinguished edge $e$ is {\em not} separating, and so appears as the internal edge of the wheel portion of the graph.
 \end{enumerate}
 
-By the classical master equation, we see that the $\epsilon \to 0$ limit of weights of Type (a) go to zero.
+The classical master equation implies that the $\epsilon \to 0, L \to 0$ limit of weights of Type (a) go to zero.
 Thus, we must only consider the weights of Type (b). 
 
 The result will follow from two steps.
@@ -2373,7 +2379,7 @@ First, we make the familiar change of coordinates as in Equations (\ref{coords1}
 Using the explicit form the heat kernel and propagator we see that for any $\Phi \in C^\infty_c(\CC^{dk})$ the weight is
 \ben
 \begin{array}{lll}
-\Tilde{W}_{\epsilon < L}^{k, (n)}(\Phi) & = \displaystyle \int_{w^k \in \CC^d} \d^{2d} w^k \int_{(w_1,\ldots,w_{k-1}) \in (\CC^d)^{k-1}} \left(\prod_{\alpha=1}^{k-1} \d^{2d} w^\alpha\right) \Phi(w^1,\ldots,w^k) \int_{(t_1,\ldots,t_k) \in [\epsilon,L]^{k-1}} \frac{1}{(4 \pi \epsilon)^d} \prod_{\alpha=1}^{k-1} \frac{\d t_\alpha}{(4 \pi t_\alpha)^d} \\
+\Tilde{W}_{\epsilon < L}^{k, (n)}(\Phi) & = \displaystyle \int_{w^k \in \CC^d} \d^{2d} w^k \int_{(w_1,\ldots,w_{k-1}) \in (\CC^d)^{k-1}} \left(\prod_{\alpha=1}^{k-1} \d^{2d} w^\alpha\right) \Phi(w^1,\ldots,w^k) \\ & \displaystyle \times \int_{(t_1,\ldots,t_k) \in [\epsilon,L]^{k-1}} \frac{1}{(4 \pi \epsilon)^d} \prod_{\alpha=1}^{k-1} \frac{\d t_\alpha}{(4 \pi t_\alpha)^d} \\
 & \displaystyle \times \sum_{i_1,\ldots,i_{k-1} =1}^d \epsilon_{i_1,\ldots,i_d} \left(\frac{\wbar^1_{i_1}}{t_1} \frac{(\wbar^1)^{n^1}}{4t^{|n^1|}}\right) \cdots \left(\frac{\wbar^{k-1}_{i_{k-1}}}{4t_{k-1}}\frac{(\wbar^{k-1})^{n^{k-1}}}{4t^{|n^{k-1}|}}\right) \left(\frac{1}{4t^{|n^k|}} \left(\sum_{\alpha=1}^{k-1} \wbar^\alpha\right)^{n^k}\right) \\
 & \displaystyle \times \exp\left(- \sum_{\alpha=1}^{k-1} \frac{|w^{\alpha}|^2}{4t_\alpha} - \frac{1}{4\epsilon} \left|\sum_{\alpha=1}^{k-1} w^\alpha \right|^2\right) .
 \end{array}
@@ -2394,8 +2400,8 @@ D_{k}(t) = \prod_{j=1}^d \left(\frac{\partial}{\partial w_j^k} - \sum_{\beta =1}
 By a completely analogous version of Lemma \label{lem: diff applied E} the operators above allow us to integrate by parts and express the weight in the form
 \ben
 \begin{array}{lll}
-\Tilde{W}_{\epsilon < L}^{k, (n)}(\Phi) & = \displaystyle \pm \int_{w^k \in \CC^d} \d^{2d} w^k \int_{(w_1,\ldots,w_{k-1}) \in (\CC^d)^{k-1}}\left(\prod_{\alpha=1}^{k-1} \d^{2d} w^\alpha\right) \int_{(t_1,\ldots,t_{k-1}) \in [\epsilon,L]^{k-1}} \frac{1}{(4 \pi \epsilon)^d} \prod_{\alpha=1}^{k-1} \frac{\d t_\alpha}{(4 \pi t_\alpha)^d}  \\ 
-& \displaystyle \times\left( \sum_{i_1,\ldots, i_{k-1}} \epsilon_{i_1\cdots,i_d} D_{1, i_1}(t) \cdots D_{k-1,i_{k-1}} (t) D_k(t) \Phi(w^1,\ldots,w^k) \right) \times \exp\left(- \sum_{\alpha=1}^{k-1} \frac{|w^{\alpha}|^2}{4t_\alpha} - \frac{1}{4\epsilon} \left|\sum_{\alpha=1}^{k-1} w^\alpha \right|^2\right) .
+\Tilde{W}_{\epsilon < L}^{k, (n)}(\Phi) & = \displaystyle \pm \int_{w^k \in \CC^d} \d^{2d} w^k \int_{(w_1,\ldots,w_{k-1}) \in (\CC^d)^{k-1}}\left(\prod_{\alpha=1}^{k-1} \d^{2d} w^\alpha\right) \\ & \displaystyle \times \int_{(t_1,\ldots,t_{k-1}) \in [\epsilon,L]^{k-1}} \frac{1}{(4 \pi \epsilon)^d} \prod_{\alpha=1}^{k-1} \frac{\d t_\alpha}{(4 \pi t_\alpha)^d}  \\ 
+& \displaystyle \times\left( \sum_{i_1,\ldots, i_{k-1}} \epsilon_{i_1\cdots,i_d} D_{1, i_1}(t) \cdots D_{k-1,i_{k-1}} (t) D_k(t) \Phi(w^1,\ldots,w^k) \right) \\ &\displaystyle \times \exp\left(- \sum_{\alpha=1}^{k-1} \frac{|w^{\alpha}|^2}{4t_\alpha} - \frac{1}{4\epsilon} \left|\sum_{\alpha=1}^{k-1} w^\alpha \right|^2\right) .
 \end{array}
 \een 
 Observe that the operators $D_{\alpha,i_\alpha}(t), D_k(t)$ are uniformly bounded in $t$.

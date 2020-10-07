@@ -1,0 +1,179 @@
+\documentclass[11pt]{amsart}
+
+\pdfoutput = 1
+
+\usepackage{macros,slashed,amsaddr}
+
+\linespread{1.5}
+
+\setcounter{tocdepth}{2}
+\numberwithin{equation}{section}
+\newcommand{\nocontentsline}[3]{}
+\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
+\newcommand{\changelocaltocdepth}[1]{%
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{#1}}%
+  \setcounter{tocdepth}{#1}%
+}
+\setcounter{tocdepth}{1}
+
+\def\brian{\textcolor{blue}{BW: }\textcolor{blue}}
+\def\ingmar#1{{\textcolor{green!65!black}{IAS: {#1}}}}
+
+\def\Dol{{\rm Dol}}
+\def\dR{{\rm dR}}
+\def\ep{{\varepsilon}}
+\def\define{\overset{\rm def}{=}}
+\newcommand{\defterm}[1]{\textbf{\emph{#1}}}
+
+
+\begin{document}
+
+\title{Descent and Gelfand--Fuks cohomology}
+
+The dg Lie algebra $\cT(\CC^n) = \Omega^{0,\bu}(\CC^n, T)$ is a resolution for the Lie algebra $\cT^{hol}(\CC^n)$ of holomorphic vector fields on $\CC^n$. 
+There is a quasi-isomorphism
+\[
+p : \cT(\CC^n) \xto{\simeq}  H^0(\cT(\CC^n)) = \cT^{hol}(\CC^n) .
+\]
+induced by the projection onto the zeroeth cohomology of $\cT(\CC^n)$. 
+Furthermore, there is a map 
+\[
+j_0^\infty :  \cT^{hol}(\CC^n) \to \fw_n
+\]
+which takes the Taylor expansion of a holomorphic vector field at $0 \in \CC^n$. 
+The composition $j \define j_0^\infty \circ p : \cT(\CC^n) \to \fw_n$ is a map of dg Lie algebras. 
+
+The map $j$ defines a map on (continuous) Chevalley--Eilenberg complexes
+\[
+j^* : \clie^\bu(\fw_n) \to \clie^\bu\left(\Omega^{0,\bu}(\cT(\CC^n))\right) .
+\]
+
+\begin{lem}
+The map $j^*$ factors through $\clie^\bu\left(J \cT(\CC^n) \right) \hookrightarrow \clie^\bu(\cT(\CC^n))$.
+\end{lem}
+
+As a graded vector space $\clie^{\#}(J \cT(\CC^n))$ is the space of global sections of a graded (infinite rank) vector bundle on $\CC^n$ that we denote by $\clie^{\#}(J \cT)$. 
+Equipped with the Chevalley--Eilenberg differential $\clie^\bu(J \cT)$ becomes a complex of vector bundles. 
+
+By the lemma, we obtain for each $\phi \in \clie^\bu(\fw_n)$ a global section $j^* \phi$ of the vector bundle $\clie^\bu(J \cT)$. 
+
+\begin{eg}
+Suppose $n=1$ and consider the $1$-cochain $\phi : f \frac{\partial}{\partial z} \mapsto f'(0)$ of $\fw_1$. 
+The value of the section $j^* \phi$ at the point $z_0 \in \CC$ is the cochain for $\cT = \Omega^{0,\bu}(\CC, T_\CC)$ defined by
+\[
+a(z,\zbar) \frac{\partial}{\partial z} + b(z,\zbar) \d \zbar \frac{\partial}{\partial z} \mapsto \frac{\partial}{\partial z} a(z,\zbar) |_{z = z_0} .
+\]
+\end{eg}
+
+The sheaf of sections of the bundle $\clie^\bu(J \cT)$ is a sheaf of commutative dg algebras. 
+In fact, it is a commutative dg algebra in the category of $D_{\CC^n}$-modules.
+
+Consider the de Rham complex of the $D_{\CC^n}$-algebra $\clie^\bu(J \cT)$
+\[
+\Omega^\bu \left(\CC^n , \clie^\bu(J \cT) \right) .
+\]
+
+\begin{thm}
+Suppose $\phi \in \clie^\bu(\fw_n)$ and let $\phi^0 = j^* \phi$. 
+Then, there exists $\phi^{i,j} \in \Omega^{i,j} (\CC^n , \clie^\bu(J \cT))$, $1 \leq i,j \leq n$ such that the element 
+\[
+\Phi \define \sum_{i,j} \phi^{i,j} 
+\]
+satisfies the equation $(\d_{\rm dR} + \d_{\cT}) \Phi = 0$. 
+\end{thm}
+
+Using the Hodge decomposition of the Rham differential $\d_{\rm dR} = \dbar + \partial$, we we will actually show that the elements $\phi^{i,j}$ satisfy a pair of descent equations:
+\begin{itemize}
+\item Holomorphic descent:
+\[
+\dbar \phi^{i,j} = \dbar_{\cT} \phi^{i, j+1} 
+\]
+for $0 \leq i , j \leq n$ and
+\item Cartan descent:
+\[
+\partial \phi^{i,j} = \d_{{\rm CE}} \phi^{i+1, j} 
+\]
+for $0 \leq i , j \leq n$. 
+\end{itemize}
+
+\begin{thm}
+The assignment $\phi \mapsto \phi^{n,n}$ defines a quasi-isomorphism $\clie^\bu(\fw_n)[2n] \simeq \cloc^\bu(\cT)$.
+In particular, if $\phi \in \clie^\bu(\fw_n)$ is a cocycle then $\phi^{n,n} \in \cloc^\bu(\cT)$ is a local cocycle and up to equivalence all such local cocycles are obtained in this way.
+\end{thm}
+
+\begin{eg}
+Consider the Gelfand--Fuks cocycle $\phi \in \clie^3(\fw_n)$ defined by
+\[
+\phi \bigg(f(x) \frac{\d}{\d x} , g(x) \frac{\d}{\d x} , h(x) \frac{\d}{\d x} \bigg) = \brian{you know the determinant} .
+\]
+The section $\phi^0 = j^* \phi$ of $\clie^\bu(J \cT)$ is
+\[
+\phi^0 \bigg(\alpha(z,\zbar) \frac{\partial}{\partial z} , \beta(z,\zbar) \frac{\partial}{\partial z} , \gamma(z ,\zbar) \frac{\partial}{\partial z} \bigg) = 
+\]
+We first solve for the descent element $\phi^{0,1}$ which satisfies 
+\[
+\dbar \phi^0 = \d_{\cT} \phi^{0,1} = (\d_{\rm CE} + \dbar_\cT) \phi^{0,1} 
+\]
+which has the general formula
+\[
+\phi^{0,1} = \d \zbar \frac{\partial}{\partial (\d \zbar)} \phi^0 .
+\]
+Then, automatically $\d_{\rm CE} \phi^{0,1} = 0$.
+
+\end{eg}
+
+\appendix
+
+\section{Smooth version}
+
+Let's first consider the smooth case. 
+Suppose $M$ is an $n$-dimensional manifold and let $\fX(M)$ denote the associated Lie algebra of vector fields. 
+For each $x \in M$ we have a cochain map
+\[
+j_x^* : \clie^\bu(\fw_n) \to \clie^\bu(\fX(M))
+\]
+which sends a cochain $\alpha$ to $j_x^* \alpha$ where 
+\[
+j_x : \fX(M) \to \fw_n
+\]
+takes a vector field and computes its $\infty$-jet at $x \in M$. 
+
+\begin{lem}
+Let $\alpha \in \clie^k(\fw_n)$ be a cochain. 
+For any $x,y \in M$ the cochains $j_x^* \alpha$ and $j_y^* \alpha$ are cohomologous. 
+In particular, there exists a $\alpha^{(1)} \in \Omega^1(M) \otimes \clie^{k-1}(\fw_n)$ such that $(\d_{dR} \otimes 1) \alpha = (1 \otimes \d_{\fX}) \alpha^{(1)}$. 
+\end{lem}
+
+Inductively, we obtain a sequence of cochains $(j_x^* \alpha, \alpha^{(1)}, \ldots, \alpha^{(n)})$ satisfying 
+\[
+(\d_{dR} \otimes 1) \alpha^{(j)} = (1 \otimes \d_{\fX}) \alpha^{(j+1)} .
+\]
+It follows immediately that for any $\ell$-cycle $N \subset M$ one obtains a cochain of $\fX(M)$ with {\em trivial} coefficients:
+\[
+\int_N \alpha^{(\ell)} \in \clie^{k-\ell}(\fX(M)) .
+\]
+
+\begin{lem}
+If $\alpha \in \clie^k(\fw_n)$ is a cocycle then $\int_N \alpha^{(\ell)}$ is a cocycle. 
+\end{lem}
+
+\begin{eg}
+Consider the cocycle $\alpha \in \clie^3(\fw_1)$ which is dual to the homology $3$-cycle
+\[
+L_{-1} \wedge L_0 \wedge L_1 \in {\rm C}_3(\fw_1) .
+\]
+Consider $M = S^1$. 
+For $x \in S^1$ one has 
+\[
+j_x^* \alpha \bigg(f(x) \frac{\d}{\d x} , g(x) \frac{\d}{\d x} , h(x) \frac{\d}{\d x} \bigg) = \brian{you know the determinant} .
+\]
+An explicit form of a cochain $\alpha^{(1)} \in \Omega^1(S^1) \otimes \clie^2(\fX(S^1))$ satisfying $\d_{\fX} \alpha^{(1)} = \d_{dR} j_x^* \alpha$ is
+\[
+\alpha^{(1)} \bigg( f(x) \frac{\d}{\d x} , g(x) \frac{\d}{\d x} \bigg) \define f'(x) \d_{dR} (g'(x)) - g'(x) \d_{dR} (f'(x)) \in \Omega^1(S^1) .
+\]
+As one can immediately check, $\int_{S^1} \alpha^{(1)} \in \clie^2 (\fX(S^1))$ is the usual Virasoro cocycle.
+\end{eg}
+
+
+
+\end{document}

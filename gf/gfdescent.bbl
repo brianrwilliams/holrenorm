@@ -1,0 +1,258 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{Anderson}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=AIM}{%
+         family={Anderson},
+         familyi={A\bibinitperiod},
+         given={Ian\bibnamedelima M.},
+         giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Amer. Math. Soc., Providence, RI}%
+    }
+    \strng{namehash}{AIM1}
+    \strng{fullhash}{AIM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Mathematical aspects of classical field theory
+  ({S}eattle, {WA}, 1991)}
+    \verb{doi}
+    \verb 10.1090/conm/132/1188434
+    \endverb
+    \field{pages}{51\bibrangedash 73}
+    \field{series}{Contemp. Math.}
+    \field{title}{Introduction to the variational bicomplex}
+    \verb{url}
+    \verb https://doi.org/10.1090/conm/132/1188434
+    \endverb
+    \field{volume}{132}
+    \field{year}{1992}
+  \endentry
+
+  \entry{CostelloBook}{book}{}
+    \name{author}{1}{}{%
+      {{hash=CK}{%
+         family={Costello},
+         familyi={C\bibinitperiod},
+         given={Kevin},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Mathematical Society}%
+    }
+    \strng{namehash}{CK1}
+    \strng{fullhash}{CK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{170}
+    \field{series}{Mathematical Surveys and Monographs}
+    \field{title}{Renormalization and effective field theory}
+    \field{year}{2011}
+  \endentry
+
+  \entry{CG2}{unpublished}{}
+    \name{author}{2}{}{%
+      {{hash=CK}{%
+         family={Costello},
+         familyi={C\bibinitperiod},
+         given={Kevin},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=GO}{%
+         family={Gwilliam},
+         familyi={G\bibinitperiod},
+         given={Owen},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CKGO1}
+    \strng{fullhash}{CKGO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{available at \url{http://people.mpim-bonn.mpg.de/gwilliam}}
+    \field{title}{Factorization algebras in quantum field theory. {V}ol. 2}
+  \endentry
+
+  \entry{GF}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GIM}{%
+         family={Gelfand},
+         familyi={G\bibinitperiod},
+         given={I.\bibnamedelima M.},
+         giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=FDB}{%
+         family={Fuks},
+         familyi={F\bibinitperiod},
+         given={D.\bibnamedelima B.},
+         giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GIMFDB1}
+    \strng{fullhash}{GIMFDB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{issn}{0373-2436}
+    \field{pages}{322\bibrangedash 337}
+    \field{title}{Cohomologies of the {L}ie algebra of formal vector fields}
+    \field{volume}{34}
+    \field{journaltitle}{Izv. Akad. Nauk SSSR Ser. Mat.}
+    \field{year}{1970}
+  \endentry
+
+  \entry{Fuks}{book}{}
+    \name{author}{1}{}{%
+      {{hash=FDB}{%
+         family={Fuks},
+         familyi={F\bibinitperiod},
+         given={D.\bibnamedelima B.},
+         giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Consultants Bureau, New York}%
+    }
+    \strng{namehash}{FDB1}
+    \strng{fullhash}{FDB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{0-306-10990-5}
+    \field{note}{Translated from the Russian by A. B. Sosinski{\u\i}}
+    \field{pages}{xii+339}
+    \field{series}{Contemporary Soviet Mathematics}
+    \field{title}{Cohomology of infinite-dimensional {L}ie algebras}
+    \field{year}{1986}
+  \endentry
+
+  \entry{GK}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GIM}{%
+         family={Gelfand},
+         familyi={G\bibinitperiod},
+         given={I.\bibnamedelima M.},
+         giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=KDA}{%
+         family={Ka{\v{z}}dan},
+         familyi={K\bibinitperiod},
+         given={D.\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GIMKDA1}
+    \strng{fullhash}{GIMKDA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{issn}{0002-3264}
+    \field{pages}{269\bibrangedash 272}
+    \field{title}{Certain questions of differential geometry and the
+  computation of the cohomologies of the {L}ie algebras of vector fields}
+    \field{volume}{200}
+    \field{journaltitle}{Dokl. Akad. Nauk SSSR}
+    \field{year}{1971}
+  \endentry
+
+  \entry{GGW}{unpublished}{}
+    \name{author}{3}{}{%
+      {{hash=GO}{%
+         family={Gwilliam},
+         familyi={G\bibinitperiod},
+         given={Owen},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=GV}{%
+         family={Gorbounov},
+         familyi={G\bibinitperiod},
+         given={Vassily},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=WB}{%
+         family={Williams},
+         familyi={W\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GOGVWB1}
+    \strng{fullhash}{GOGVWB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Available at \url{https://arxiv.org/abs/1610.09657}}
+    \field{title}{{C}hiral differential operators via {B}atalin-{V}ilkovisky
+  quantization}
+  \endentry
+
+  \entry{SiZhengpingKai}{unpublished}{}
+    \name{author}{3}{}{%
+      {{hash=GZ}{%
+         family={Gui},
+         familyi={G\bibinitperiod},
+         given={Zhengping},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Si},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=XK}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Kai},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GZLSXK1}
+    \strng{fullhash}{GZLSXK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Available at \url{http://arxiv.org/abs/1911.11173}}
+    \field{title}{{G}eometry of {L}ocalized {E}ffective {T}heory, {E}xact
+  {S}emi-classical {A}pproximation and {A}lgebraic {I}ndex}
+  \endentry
+
+  \entry{GG3}{unpublished}{}
+    \name{author}{2}{}{%
+      {{hash=GR}{%
+         family={Grady},
+         familyi={G\bibinitperiod},
+         given={Ryan},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GO}{%
+         family={Gwilliam},
+         familyi={G\bibinitperiod},
+         given={Owen},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GRGO1}
+    \strng{fullhash}{GRGO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{available at \url{http://arxiv.org/abs/1604.00711}}
+    \field{title}{Lie algebroids as $L$-infinity spaces}
+  \endentry
+\enddatalist
+\endinput

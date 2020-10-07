@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: holrenorm_cmp.aux
+The style file: alpha.bst
+Database file #1: holrenorm.bib
+You've used 45 entries,
+            2543 wiz_defined-function locations,
+            869 strings with 10892 characters,
+and the built_in function-call counts, 15823 in all, are:
+= -- 1630
+> -- 650
+< -- 33
++ -- 208
+- -- 202
+* -- 1088
+:= -- 2660
+add.period$ -- 148
+call.type$ -- 45
+change.case$ -- 246
+chr.to.int$ -- 42
+cite$ -- 45
+duplicate$ -- 650
+empty$ -- 1149
+format.name$ -- 270
+if$ -- 3181
+int.to.chr$ -- 4
+int.to.str$ -- 0
+missing$ -- 43
+newline$ -- 235
+num.names$ -- 135
+pop$ -- 221
+preamble$ -- 1
+purify$ -- 300
+quote$ -- 0
+skip$ -- 499
+stack$ -- 0
+substring$ -- 890
+swap$ -- 73
+text.length$ -- 33
+text.prefix$ -- 23
+top$ -- 0
+type$ -- 324
+warning$ -- 0
+while$ -- 161
+width$ -- 49
+write$ -- 585

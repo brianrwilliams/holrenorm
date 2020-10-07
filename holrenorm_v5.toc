@@ -1,0 +1,24 @@
+\contentsline {section}{\tocsection {}{1}{Introduction}}{1}{section.1}
+\contentsline {subsection}{\tocsubsection {}{1.1}{Acknowledgements}}{3}{subsection.1.1}
+\contentsline {section}{\tocsection {}{2}{The definition of a holomorphic field theory}}{3}{section.2}
+\contentsline {subsection}{\tocsubsection {}{2.1}{A recollection of the BV-BRST formalism}}{4}{subsection.2.1}
+\contentsline {subsubsection}{\tocsubsubsection {}{2.1.1}{Classical field theory}}{4}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\tocsubsubsection {}{2.1.2}{Local functionals}}{5}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\tocsubsubsection {}{2.1.3}{The definition of a classical field theory}}{6}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\tocsubsubsection {}{2.1.4}{A description using $L_\infty $ algebras}}{7}{subsubsection.2.1.4}
+\contentsline {subsection}{\tocsubsection {}{2.2}{The definition of a holomorphic field theory}}{9}{subsection.2.2}
+\contentsline {subsubsection}{\tocsubsubsection {}{2.2.1}{Free holomorphic theories}}{9}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\tocsubsubsection {}{2.2.2}{Interacting holomorphic theories}}{13}{subsubsection.2.2.2}
+\contentsline {subsection}{\tocsubsection {}{2.3}{Holomorphically translation invariant theories}}{20}{subsection.2.3}
+\contentsline {subsubsection}{\tocsubsubsection {}{2.3.1}{Translation invariant interactions}}{22}{subsubsection.2.3.1}
+\contentsline {section}{\tocsection {}{3}{One-loop regularization for theories on $\PazoBB C^d$}}{24}{section.3}
+\contentsline {subsection}{\tocsubsection {}{3.1}{Homotopy RG flow}}{26}{subsection.3.1}
+\contentsline {subsection}{\tocsubsection {}{3.2}{Holomorphic gauge fixing}}{27}{subsection.3.2}
+\contentsline {subsection}{\tocsubsection {}{3.3}{The propagator on $\PazoBB C^d$}}{28}{subsection.3.3}
+\contentsline {subsection}{\tocsubsection {}{3.4}{Trees}}{30}{subsection.3.4}
+\contentsline {subsection}{\tocsubsection {}{3.5}{A simplification for one-loop weights}}{30}{subsection.3.5}
+\contentsline {section}{\tocsection {}{4}{Chiral anomalies in arbitrary dimensions}}{36}{section.4}
+\contentsline {subsection}{\tocsubsection {}{4.1}{The quantum master equation}}{36}{subsection.4.1}
+\contentsline {subsection}{\tocsubsection {}{4.2}{The QME for holomorphic theories}}{38}{subsection.4.2}
+\contentsline {subsubsection}{\tocsubsubsection {}{4.2.1}{Relation to the ABJ anomaly}}{42}{subsubsection.4.2.1}
+\contentsline {section}{\tocsection {Appendix}{A}{Some functional analysis}}{43}{appendix.A}
