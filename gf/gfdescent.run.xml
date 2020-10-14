@@ -86,7 +86,6 @@
       <file>gfdescent-blx.bib</file>
     </requires>
     <requires type="editable">
-      <file>descent.bib</file>
     </requires>
     <requires type="static">
       <file>biblatex.bst</file>

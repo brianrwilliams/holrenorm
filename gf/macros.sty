@@ -1,6 +1,19 @@
-\usepackage{mathrsfs,amsmath, amscd, amsthm,amssymb, amsfonts, verbatim,subfigure, enumerate,slashed}
+\usepackage{mathrsfs,amsmath, amscd, amsthm,amssymb, amsfonts, verbatim,subfigure, enumerate,slashed, amsaddr}
 \usepackage[mathcal]{euscript}
 \usepackage{graphicx}
+\linespread{1.25}
+
+\pdfoutput = 1
+
+\setcounter{tocdepth}{2}
+\numberwithin{equation}{section}
+\newcommand{\nocontentsline}[3]{}
+\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
+\newcommand{\changelocaltocdepth}[1]{%
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{#1}}%
+  \setcounter{tocdepth}{#1}%
+}
+\setcounter{tocdepth}{1}
 %\usepackage[top=1in, bottom=1.25in, left=1in, right=1in,footskip=.5in]{geometry}
 %\usepackage[margin=1in]{geometry}
 %\usepackage{fullpage}
@@ -13,13 +26,15 @@
 \usepackage{enumitem}
 \usepackage[smalltableaux,centertableaux]{ytableau}
 
-%Use Palatino font
 
 %\usepackage{mathpazo}
 \usepackage[colorlinks=true,linkcolor=blue,citecolor=red]{hyperref}
 
 
 \usepackage[all,cmtip]{xy}
+
+\def\brian{\textcolor{blue}{BW: }\textcolor{blue}}
+\def\ingmar#1{{\textcolor{green!65!black}{IAS: {#1}}}}
 
 
 %tikz stuff
@@ -292,3 +307,15 @@
 \hyphenation{Lo-ren-tz-ian}
 \hyphenation{Eu-clid-ean}
 \def\N{\cN}
+
+%gf stuff
+\def\Dol{{\rm Dol}}
+\def\dR{{\rm dR}}
+\def\ep{{\varepsilon}}
+\def\define{\overset{\rm def}{=}}
+\newcommand{\defterm}[1]{\textbf{\emph{#1}}}
+\def\Lag{{\rm Lag}}
+\def\jet{{\rm J}}
+\def\tangent{{\rm T}}
+\def\desc{{\rm desc}}
+\def\fgl{\mathfrak{gl}}

@@ -1,0 +1,247 @@
+#+TITLE: On the local cohomology of holomorphic vector fields
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [11pt]
+#+LATEX_HEADER: \usepackage{macros}
+
+* Introduction
+The Lie algebra cohomology of vector fields on a smooth oriented compact manifold are \brian{something like: is a related cochain complex that has been studied extensively in the context of characteristic classes of foliations \cite{Fuks, Guillemin, LosikDiag, Bernstein}.}
+
+The Lie algebra cohomology of vector fields is, by definition, the cohomology of the Chevalley--Eilenberg cochain complex $\clie^\bu(\Vect(M))$.
+An important step in the computation of this cohomology is a computation of the cohomology of the {\em diagonal subcomplex} $\clie^\bu_{\triangle} (\Vect(M)) \subset \clie^\bu(\Vect(M))$ which consists of cochains $\varphi \in \clie^k(\Vect(M))$ satisfying $\varphi(X_1,\ldots,X_k) = 0$ if $\bigcap_{i=1}^k {\rm Supp}(X_i) = \emptyset$.
+
+This paper concerns the cohomology of a smaller subcomplex of {\em local cochains} of ${\rm Vect}(M)$.
+Roughly, a cochain $\varphi \in \clie^k(\Vect(M))$ is local if it can be written as
+\beqn
+\varphi (X_1,\dots, X_n) = \int_M L(X_1,\ldots, X_n) .
+\eeqn
+Here, $L$ is a Lagrangian density, meaning it is a graded-symmetric polydifferential operator
+\beqn
+L : \Vect(M)^{\otimes k} \to \Omega^{\rm top}(M) .
+\eeqn
+The local cochain complex of $\Vect(M)$ will be denoted $\cloc^\bu(\Vect(M))$.
+It is immediate to see that every local cochain is diagonal, so that there is a sequence of inclusions of cochain complexes
+\beqn
+\cloc^\bu(\Vect(M)) \hookrightarrow {\rm C}^\bu_{\triangle} (\Vect(M)) \hookrightarrow \clie^\bu(\Vect(M)) .
+\eeqn
+
+The local cohomology of vector fields is motivated, in part, by variational calculus, particularly as it pertains to classical and quantum field theory.
+A classical field theory is, in part, prescribed by a Lagrangian density depending on the fields.
+To describe the dynamics of a system one finds the extrema of the action functional given by integrating the Lagrangian density over the spacetime manifold.
+In other words, the key piece of data is that of a local functional.
+
+The theory of anomalies is an important structural aspect of quantum field theory.
+In short, an anomaly describes the failure of a symmetry in a classical field theory to persist to a symmetry at the quantum level.
+Similarly to action functionals, anomalies can be realized as local functionals.
+
+A diffeomorphism invariant field theory on a manifold $M$ receives an infinitesimal action by the Lie algebra of vector fields $\Vect(M)$.
+Anomalies for this infinitesimal action to exist at the quantum level are generally given by local cocycles in $\cloc^\bu(\Vect(M))$.
+
+\section{Definitions and main results}
+
+In this section, $X$ denotes a smooth manifold.
+We work in the $C^\infty$-category, so unless otherwise specified a ``section" means a smooth section,
+a ``differential form" means a smooth differential form, etc..
+
+Let $E \to X$ denote a $\ZZ$-graded vector bundle on $X$ and denote by $\cE$ its sheaf of sections.
+We consider the pro vector bundle of $\infty$-jets which we will denote by $\jet (E)$, see \cite{Anderson} or \cite[\S 5.6]{CostelloBook} for instance.
+The sheaf of smooth sections of this pro vector bundle carries the natural structure of a $D_X$-module.
+
+\begin{dfn}
+Let $E$ be a graded vector bundle on $X$.
+The sheaf of \defterm{Lagrangians} on $E$ is the $C^\infty_X$-module
+\beqn
+\Lag (E) \define \prod_{n > 0} {\rm Hom}_{C^\infty_X} \left(\jet (E) , C^\infty_X\right) .
+\eeqn
+\end{dfn}
+
+\begin{rmk}
+The notation ${\rm Hom}_{C^\infty_X} \left(\jet (E) , C^\infty_X\right)$ refers to the sheaf of continuous linear maps of $C^\infty_X$-modules.
+This can be viewed as an ind vector bundle formally dual to the pro vector bundle $\jet (E)$.
+The flat connection defining the $D_X$-module structure on $\jet (E)$ endows this sheaf with the structure of a $D_X$-module.
+Notice that the constant functionals on $\jet (E)$ do not appear in the definition of $\Lag(E)$, this is mostly for conventional reasons and will not play a huge role in what follows.
+\end{rmk}
+
+For any graded vector bundle $E$, the $C^\infty_X$-modules $\Lag(E)$ has the natural structure of a $D_X$-algebra, induced from the $D_X$-module structure on $\jet(E)$.
+
+Let ${\rm Dens}_X$ be the right $D_X$-module of densities on $X$.
+Given any left $D_X$-module $V$ one can consider the following sheaf
+\beqn
+{\rm Dens}_X \otimes_{D_X} V .
+\eeqn
+If $X$ is an oriented smooth manifold and $V$ is flat, then this agrees with (a shift of) the de Rham complex of $V$, see Remark \ref{rmk:derham} below.
+For the case at hand, $V$ is the left $D_X$-module of Lagrangians ${\rm Lag} (E)$ and we have the following definition.
+
+\begin{dfn}
+Let $E$ be a vector bundle on $X$.
+The sheaf of \defterm{local functionals} on $X$ is
+\beqn
+\oloc(E) \define {\rm Dens}_X \otimes_{D_X} {\rm Lag} (E) .
+\eeqn
+\end{dfn}
+
+Concretely, a section of ${\rm Lag}(E)$ is a sum of functionals of the form
+\beqn
+\phi \in \cE \mapsto D_{1} \phi_1 \cdots  D_{n} \phi_n
+\eeqn
+where $D_i$ are differential operators acting on the bundle $E$.
+Likewise, a section of $\oloc(E)$ is given as a sum of functionals which send a section $\phi$ to a class
+\beqn
+\bigg[D_{1} \phi_1 \cdots  D_{n} \phi_n \omega \bigg]
+\eeqn
+where $\omega$ is a density on $X$.
+The brackets denotes an equivalence class where two sections are equivalent if they differ up to a total derivative.
+For this reason, we will often write such an element using the integration symbol
+\beqn
+\int D_{1} \phi_1 \cdots  D_{n} \phi_n \omega
+\eeqn
+where we provide the warning that no actual integration is occurring. \footnote{Of course, unless the section $\phi$ is compactly supported integration over an open subset is ill-defined.}
+
+\begin{rmk}\label{rmk:derham}
+If $X$ is an oriented smooth manifold, the sheaf of local functionals of $E$ can be expressed using the de Rham complex of the $D_X$-module of Lagrangians.
+In this case, ${\rm Dens}_X$ can be replaced by the bundle of top forms $\Omega^{d}_X$ where $d = \dim_{\RR}(X)$.
+This right $D_X$-module $\Omega^d_X$ has a free resolution of the form
+\beqn
+\Omega^0 \otimes_{C^\infty_X} D_X [d] \to \cdots \to \Omega^{d-1}_X \otimes_{C^\infty_X} D_X [1] \to \Omega^d_X \otimes_{C^\infty_X} D_X .
+\eeqn
+Since ${\rm Lag}(E)$ is flat as a $D_X$-module one can use this resolution to obtain a quasi-isomorphism
+\beqn\label{derham1}
+\oloc(E) \; \simeq \; \Omega^\bu \bigg( X \; , \; {\rm Lag}(E) \bigg)[d] .
+\eeqn
+We will use this description extensively throughout this paper.
+For more details see Theorem \cite[Lemma 3.5.4.1]{CG2}.
+In the unoriented case one would need to use a twisted version of the de Rham complex.
+\end{rmk}
+
+The next definition we will need is that of a local dg Lie algebra.
+Roughly, this is a vector bundle whose sheaf of sections is equipped with a sufficiently well-behaved dg Lie algebra structure.
+
+\begin{dfn}
+A \defterm{local dg Lie algebra} on a smooth manifold $X$ is a triple $(L, \d, [\cdot , \cdot])$ where:
+\begin{itemize}
+\item[(i)] $L$ a $\ZZ$-graded vector bundle on $X$ of finite total rank;
+\item[(ii)] $\d$ is a degree $+1$ differential operator $\d : \cL \to \cL$ on the sheaf $\cL$ of smooth sections of~$L$, and
+\item[(iii)] $[\cdot, \cdot]$ is a bilinear polydifferential operator
+\beqn
+[\cdot , \cdot] : \cL \times \cL \to \cL
+\eeqn
+\end{itemize}
+such that the triple $(\cL, \d, [\cdot,\cdot])$ carries the structure of a sheaf of dg Lie algebras.
+\end{dfn}
+
+Just as in the case of an ordinary graded vector bundle, we can discuss the Lagrangians on a local Lie algebra $L$.
+In this case, ${\rm Lag}(L)$ is equipped with the Chevalley--Eilenberg differential $\d_{\rm CE}$ induced from the Lie algebra structure on $L$.
+In fact, the $\infty$-jet bundle $\jet(L)$ is a dg Lie algebra object in $D_X$-modules and we have the dg $D_X$-module of reduced Chevalley-Eilenberg cochains
+\beqn
+\cred^\bu (\jet(L)) = ({\rm Lag}(L), \d_{\rm CE}) .
+\eeqn
+(Notice we look at reduced cochains since we have thrown out the constant functions in the definition of ${\rm Lag}(L)$.)
+Since $\d_{\rm CE}$ is compatible with the $D_X$-module structure, this induces a differential on the space of local functionals $\oloc(L)$.
+
+We arrive at the central object of study of this paper.
+
+\begin{dfn}
+The \defterm{local Chevalley--Eilenberg cochain complex} of a local Lie algebra $\cL$ is the sheaf of cochain complexes
+\begin{align}
+\cloc^\bu(\cL) & \define \left(\oloc(L) , \d_{\rm CE} \right) \\ & = {\rm Dens}_X \otimes_{D_X} \cred^\bu(\jet(L)).
+\end{align}
+\end{dfn}
+
+We now turn to the local Lie algebras of vector fields.
+Throughout this paper we will focus mostly on the case of complex manifolds and holomorphic vector fields.
+This is mostly for sake of applications to physics, see \S \ref{sec:applications}.
+We remark on the smooth case (and other variants of vector fields) in \S \ref{sec:variants}.
+
+\begin{eg}\label{eg:localT}
+Let $X$ be a complex manifold and denote by $\tangent = \tangent X$ the holomorphic tangent bundle.
+Consider its Dolbeault complex
+\beqn
+\cT \define \Omega^{0,\bu}(X , \tangent)
+\eeqn
+This is a sheaf of cochain complexes (in fact, it is an elliptic complex) where the differential is the $\dbar$-operator.
+Moreover, this sheaf of cochain complexes is equipped with a bracket $[\cdot, \cdot]$ which extends the Lie bracket of vector fields.
+This endows $\cT$ with the structure of a local Lie algebra.
+\end{eg}
+
+\begin{rmk}
+The Dolbeault complex of any holomorphic vector bundle is a resolution for its sheaf of holomorphic sections.
+Note that the sheaf of holomorphic vector fields is {\em not} a local Lie algebra since it is not given as the $C^\infty$-sections of a vector bundle.
+Therefore, to capture the notion of holomorphic vector fields using local Lie algebras it is necessary to consider this resolution $\cT$.
+Indeed, if $\cT^{\rm hol}$ denotes the sheaf of holomorphic vector fields, the embedding $\cT^{\rm hol} \hookrightarrow \cT$ is a quasi-isomorphism.
+\end{rmk}
+
+Our first main result pertains to the local cohomology of holomorphic vector fields and is the content of \S \ref{sec:global}.
+To state the result, we introduce the notation $\fw_n$ for the Lie algebra of holomorphic vector fields on the formal $n$-disk $\Hat{D}^n$ as studied by \cite{GF}.
+
+\begin{thm} \label{thm:global}
+Let $X$ be a complex manifold of complex dimension $n$.
+Then
+\beqn
+{\rm H}^k_{\rm loc}(\cT(X)) \; \cong \; \bigoplus_{i=0}^{2n} {\rm H}^i_{\rm dR}(X) \tensor {\rm H}^{2n + k-i}_{\rm red}(\fw_n) .
+\eeqn
+%In particular, if the manifold is connected the space of anomalies for holomorphic diffeomorphisms for a theory defined on $X$ is:
+%\beqn
+%H^{1}_{\rm loc}(\sT_X) =  H^{2d+1}_{\rm Lie}(\W_d)  ,
+%\eeqn
+%which is independent of the complex manifold.
+\end{thm}
+
+\begin{rmk}
+The notation ${\rm H}_{\rm red}^{\bu} (\fw_n)$ refers to the reduced continuous cohomology of the Lie algebra of formal vector fields as pioneered by Gelfand and Fuks \cite{GF, Fuks}.
+%This is the cohomology of the complex \brian{finish}
+%The notation \brian{reduced}
+\end{rmk}
+
+\begin{rmk}
+\brian{intuitive explanation for the decoupling of de Rham and Lie algebra cohomology}
+\end{rmk}
+
+In \S \ref{sec:descent} we specialize to the flat case $X = \CC^n$ where the local cohomology reduces to a shift of the Gelfand--Fuks cohomology
+\beqn
+{\rm H}^\bu_{\rm loc}(\cT(\CC^n)) \cong {\rm H}_{\rm red}^\bu(\fw_n)[2n]
+\eeqn
+by the first result.
+In this case, we will describe an explicit quasi--isomorphism
+\beqn\label{delta}
+\delta : \clie_{\rm red}^\bu(\fw_n) \xto{\simeq} \cloc^\bu(\cT(\CC^n)) .
+\eeqn
+The map $\delta$ is constructed using the method reminiscent of ``topological descent" \brian{refs}.
+It utilizes the existence of two classes of degree $(-1)$ endomorphisms on the complex of local functionals that we denote $\eta_i$ and $\Bar{\eta}_i$.
+
+These operators can be described heuristically as follows.
+On $\CC^n$, the local cochain complex $\cloc^\bu (\cT(\CC^n))$ receives an action by the Lie algebra of translations spanned by the constant vector fields $\partial_{z_i}$ and $\partial_{\zbar_i}$.
+The action of this Lie algebra is homotopically trivial.
+The operator $\eta_i$ provides an explicit trivialization for the action of the holomorphic vector field $\partial_{z_i}$ and $\Bar{\eta}_i$ provides a trivialization for $\partial_{\zbar_i}$.
+
+Using these homotopies, we can give a description of the map $\delta$ in (\ref{delta}).
+Notice that there is a map of Lie algebras $j : \cT^{\rm hol}(D^n) \to \fw_n$ which records the Taylor expansion of a vector field at $0 \in D^n$.
+Here, $\cT^{\rm hol}(D^n)$ denotes the Lie algebra of holomorphic vector fields on an $n$-disk centered at the origin.
+
+\begin{thm}
+When $X = \CC^n$, the quasi--isomorphism $\delta$ is defined by $\delta(\phi) = \int \phi^{n,n}$ where $\phi^{n,n}$ is the $\d^n z \d^n \zbar$-component of the expression
+\beqn
+\exp\left(\sum_{i=1}^n \left(\d \zbar_i \Bar{\eta}_i + \d z_i \eta_i\right)\right) j^*\phi .
+\eeqn
+%Here:
+%\begin{itemize}
+%\item $j^* \phi$ is the pullback of the class $\phi$ along the Taylor expansion of a holomorphic vector field, and
+%\item the operators $\eta_i$, $\Bar{\eta}_i$ are degree one operators defined in Equations (\ref{eqn:holdescent}), (\ref{eqn:cartandescent}).
+%\end{itemize}
+\end{thm}
+
+\begin{eg}
+\brian{do an example on $\CC^2$.}
+\end{eg}
+
+%\subsection{Variants of the main results}
+
+# \subsubsection{Subalgebras}
+$\begin{itemize}
+%\item Symplectic vector fields.
+%\item Divergence free vector fields.
+%\end{itemize}
+%
+%\subsubsection{Super vector fields}
+%
+%\subsubsection{Smooth vector fields}
+%
+%\subsection{Applications} \label{sec:applications}
